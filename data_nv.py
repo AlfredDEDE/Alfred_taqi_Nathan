@@ -8,7 +8,7 @@ liste_noms = ["faitmal","sinz","legamos","fasol","touille","antouilette","fémal
              "emploi","boss","james","michigan","rhoades","sahalor","duryf",
              "code penal"]
 
-marks = []
+notes = []
 
 
 
@@ -18,19 +18,18 @@ texte_d_accueil = \
 texte_pour_demander_nom_eleve =\
  "Veuillez entrer le nom de l'eleve pour qui vous voulez savoir sa moyenne"
 
-replay_commands = \
+rejoue_commande = \
     ["y", "yes", "vasy", "go", "ok", "Yes", "on y va", "let's go", "oui", "o", "O", "Oui"]
-quit_commands = \
-    ["q", "Q", "quit", "Quit", "ko", "by", \
+commande_pour_quitter = \
+    ["q", "Q", "quitte", "Quit", "ko", "by", \
      "au revoir", "see u", "aurevoir", "ciao", \
      "je fuis" , "bye", "Out", "sortir", "s", "n", ]
 
-text_shown_when_re_asking_for_nom_eleve = \
+texte_pour_re_demander_nom_eleve = \
     "\nL'une ou l'autre des situations suivantes s'est présentée :\n" \
     + " *) Vous avez entré un nom qui ne figure pas dans la liste d'eleve\n" \
     + " *) Vous avez entré une moyenne qui ne figure pas entre 0 et 20.\n" \
-    + text_shown_when_asking_for_nom_eleve
-
+    +texte_pour_demander_nom_eleve
 
 
 
