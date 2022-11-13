@@ -36,9 +36,3 @@ def moyenne (notes):
         reponse = moyenne
     return reponse
 
-def moyenne_eleves_gen (nom):
-    for i in range 21 :
-        creer_des_notes()
-        moyenne(notes)
-        
-
