@@ -8,6 +8,10 @@ liste_noms = ["faitmal","sinz","legamos","fasol","touille","antouilette","fémal
              "code penal"]
 
 notes = []
+liste_note_dans_une_matiere= []
+
+
+nombre_eleves = 21
 
 texte_d_accueil = \
  "Bonjour bienvenue dans le programme"
