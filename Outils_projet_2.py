@@ -1,3 +1,6 @@
+from data import *
+
+
 def est_bon_prenom (a):
     return a in liste_prenoms
 
@@ -10,26 +13,21 @@ def est_bon_nom (a):
 def pas_bon_nom (a):
     return not (liste_noms (a))
 
-def est_un_bon_prenom (a):
-    return a in liste_prenoms
+
 ##
 
-def is_not_a_valid_f_name (a):
-    return not (liste_prenoms (a))
-
-def is_a_valid_name (a):
-    return a in liste_noms
-
-def is_not_a_valid_f_name (a):
-    return not (liste_noms (a))
-##
-
-def Prenoms (a) :
+'''def verif_nom_ou_prenom_exist (a) :
     if a in liste_prenoms :
         print(est_bon_prenom(a))
     if a in liste_nom :
-        print(est_bon_nom)
+        print(est_bon_nom(a))
     else :
-        print("Le nom se trouve pas dans la base de donnes")
+        print("Le prenom/nom se trouve pas dans la base de donnes")'''
 
-str(input("Le nom ou prenom"))
+def verif_nom_ou_prenom_exist (a) :
+    if pas_bon_prenom == False :
+        return (est_un_bon_prenom())
+    if pas_bon_nom == False :
+        return (est_un_bon_nom())
+    else :
+        print(id_pas_valide)
