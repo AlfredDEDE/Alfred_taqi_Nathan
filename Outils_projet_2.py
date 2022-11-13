@@ -31,8 +31,14 @@ def creer_des_notes():
 def moyenne (notes):
     somme = 0.0
     for i in range (len(notes)):
-        somme = somme + notes [i] * coef [i]
-        moyenne = somme / sum(float(coef))
+        somme = somme + notes [i] 
+        moyenne = somme / len(notes)
         reponse = moyenne
     return reponse
+
+def moyenne_eleves_gen (nom):
+    for i in range 21 :
+        creer_des_notes()
+        moyenne(notes)
+        
 
