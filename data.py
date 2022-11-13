@@ -9,7 +9,6 @@ liste_noms = ["faitmal","sinz","legamos","fasol","touille","antouilette","fémal
 
 marks = []
 
-
 texte_d_accueil = \
  "Bonjour bienvenue dans le programme"
 
