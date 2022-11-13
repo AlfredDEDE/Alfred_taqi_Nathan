@@ -37,26 +37,9 @@ def moyenne (notes):
     return reponse
 
 
-def savoir_notes_eleves_sup_n (n):
-    moyenne_sup_n = []
-    for i in range 21 :
-        if moyenne_gen >= n:
-            moyenne_sup_n.append()
-    return moyenne_sup_n 
 
-def savoir_notes_eleves_inf_n (n):
-    moyenne_inf_n = []
-    for i in range 21 :
-        if moyenne_gen <= n:
-            moyenne_inf_n.append()
-    return moyenne_inf_n
 
-def savoir_nbr_eleves_sup_n (savoir_notes_eleves_sup_n):
-    len(savoir_notes_eleves_sup_n())
-def savoir_nbr_eleves_inf_n (savoir_notes_eleves_inf_n) :
-    len(savoir_notes_eleves_inf_n())
-
-def notes_tous_les_eleves_gen_ds_une_matiere ():
+def notes_de_tous_les_eleves_ds_une_matiere ():
     for i in range(nombre_eleves):
         creer_des_notes()
         liste_note_dans_une_matiere.append(moyenne(notes))
@@ -71,8 +54,25 @@ def moyenne_eleves_gen_ds_une_matiere():
     moyenne_eleves_gen_ds_une_matiere = moyenne (liste_note_dans_une_matiere)
     return ( moyenne_eleves_gen_ds_une_matiere)
 
+def notes_tous_les_eleves():
+    for i in range(nombre_eleves):
+        creer_des_notes()
+        liste_note_dans_une_matiere.append(moyenne(notes))
+
+    return(liste_note_dans_une_matiere)
+
+
+
+
+
+
+
+
+
+
+
 def savoir_notes_eleves_sup_n (n):
-    moyenne_sup_n = []
+
     for i in range (nombre_eleves) :
         if moyenne_gen >= n:
             moyenne_sup_n.append()

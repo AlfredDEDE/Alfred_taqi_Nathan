@@ -13,7 +13,10 @@ liste_noms = ["faitmal","sinz","legamos","fasol","touille","antouilette","fémal
 notes = []
 liste_note_dans_une_matiere= []
 nombre_eleves = len(liste_prenoms)
-
+moyenne_sup_n = []
+moyenne_inf_n = []
+nombre_de_note_minimale = 3
+nombre_de_note_max = 8
 
 texte_d_accueil = \
  "\n Bonjour bienvenue dans le programme pour demander la moyenne"\

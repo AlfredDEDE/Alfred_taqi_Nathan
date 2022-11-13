@@ -2,7 +2,7 @@
 from data import *
 from outils import *
 
-dico = { \
+dico_eleve_a_matire_a_note = { \
  \
     "Prenom": {"Francais": creer_des_notes(), "Math": creer_des_notes(), \
                "Histoire-Geo": creer_des_notes(), "Anglais": creer_des_notes(), \
@@ -91,4 +91,43 @@ dico = { \
             "Espagnol": creer_des_notes()}, \
     }
 
+
+dico_matiere_a_note = { \
+
+    "Francais": {"Moyenne " : moyenne_eleves_gen_ds_une_matiere() \
+            "Moyenne de tous les eleves" :\
+                moyenne_de_tous_les_eleves_ds_une_matiere() \
+            "Notes de tous les eleves" : \
+                notes_de_tous_les_eleves_ds_une_matiere()
+                  }, \
+
+    "Math": {"Moyenne " : moyenne_eleves_gen_ds_une_matiere() \
+            "Moyenne de tous les eleves" :\
+                moyenne_de_tous_les_eleves_ds_une_matiere() \
+            "Notes de tous les eleves" : \
+                notes_de_tous_les_eleves_ds_une_matiere()
+                  }, \
+
+    "Histoire-Geo": {"Moyenne " : moyenne_eleves_gen_ds_une_matiere() \
+            "Moyenne de tous les eleves" :\
+                moyenne_de_tous_les_eleves_ds_une_matiere() \
+            "Notes de tous les eleves" : \
+                notes_de_tous_les_eleves_ds_une_matiere()
+                  }, \
+
+    "Anglais": {"Moyenne " : moyenne_eleves_gen_ds_une_matiere() \
+            "Moyenne de tous les eleves" :\
+                moyenne_de_tous_les_eleves_ds_une_matiere() \
+            "Notes de tous les eleves" : \
+                notes_de_tous_les_eleves_ds_une_matiere()
+                  }, \
+
+    "Espagnol": {"Moyenne " : moyenne_eleves_gen_ds_une_matiere() \
+            "Moyenne de tous les eleves" :\
+                moyenne_de_tous_les_eleves_ds_une_matiere() \
+            "Notes de tous les eleves" : \
+                notes_de_tous_les_eleves_ds_une_matiere()
+                  }, \
+
+    }
 
