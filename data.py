@@ -7,7 +7,7 @@ liste_noms = ["faitmal","sinz","legamos","fasol","touille","antouilette","fémal
              "emploi","boss","james","michigan","rhoades","sahalor","duryf",
              "code penal"]
 
-marks = []
+notes = []
 
 texte_d_accueil = \
  "Bonjour bienvenue dans le programme"
