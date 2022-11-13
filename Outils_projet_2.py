@@ -28,22 +28,9 @@ def est_bon_nom (a):
 def pas_bon_nom (a):
     return not (liste_noms (a))
 
-def moyenne (notes,coef):
-    somme = 0.0
-    for i in range (len(notes)):
-        somme = somme + notes [i] * coef [i]
-        moyenne = somme / sum(float(coef))
-        reponse = moyenne
-    return reponse
-
-notes = list(input('Notes?'))
-coef = list(input('coef?'))
-
-print (str(moyenne))
-
 def creer_une_note():
-    marks.append(randint(0, 20))
-    return marks
+    notes.append(randint(0, 20))
+    return notes
 
 def determiner_le_nombre_de_note():
     length = randint(3, 8)
@@ -52,4 +39,12 @@ def determiner_le_nombre_de_note():
 def creer_des_notes():
     for i in range(determiner_le_nombre_de_note()):
         creer_une_note()
-    return marks
+    return notes
+
+def moyenne (notes):
+    somme = 0.0
+    for i in range (len(notes)):
+        somme = somme + notes [i] * coef [i]
+        moyenne = somme / sum(float(coef))
+        reponse = moyenne
+    return reponse
