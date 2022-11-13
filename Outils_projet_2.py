@@ -87,6 +87,7 @@ def savoir_notes_eleves_inf_n (n):
 
 def savoir_nbr_eleves_sup_n (savoir_notes_eleves_sup_n):
     len(savoir_notes_eleves_sup_n())
+
 def savoir_nbr_eleves_inf_n (savoir_notes_eleves_inf_n) :
     len(savoir_notes_eleves_inf_n())
 
