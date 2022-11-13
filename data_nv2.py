@@ -8,8 +8,11 @@ liste_noms = ["faitmal","sinz","legamos","fasol","touille","antouilette","fémal
              "emploi","boss","james","michigan","rhoades","sahalor","duryf",
              "code penal"]
 
-notes = []
+#quelque variables
 
+notes = []
+liste_note_dans_une_matiere= []
+nombre_eleves = len(liste_prenoms)
 
 
 texte_d_accueil = \
