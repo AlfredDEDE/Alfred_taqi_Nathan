@@ -37,9 +37,19 @@ def moyenne (notes):
     return reponse
 
 
-def moyenne_eleves_gen_ds_une_matiere ():
+def notes_tous_les_eleves_gen_ds_une_matiere ():
     for i in range(nombre_eleves):
         creer_des_notes()
         liste_note_dans_une_matiere.append(moyenne(notes))
+
     return(liste_note_dans_une_matiere)
+
+
+def moyenne_eleves_gen_ds_une_matiere():
+    for i in range(nombre_eleves):
+        creer_des_notes()
+        liste_note_dans_une_matiere.append(moyenne(notes))
+
+    moyenne_eleves_gen_ds_une_matiere = moyenne (liste_note_dans_une_matiere)
+    return ( moyenne_eleves_gen_ds_une_matiere)
 
