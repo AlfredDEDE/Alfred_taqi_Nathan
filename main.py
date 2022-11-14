@@ -11,15 +11,8 @@ from data_nv2 import *
 #fonction qui font ce que l'énoncé demande
 
 
-def fct_qui_verifie_que_l_utilisateur_ne_rentre_pas_n_importe_quoi(reponse) :
 
-    if reponse in reponse_autoriser_au_premier_input :
 
-        verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input = "Oui"
-    else :
-        verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input = "Non"
-
-    return verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input
 
 def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemment(reponse):
 
@@ -39,11 +32,11 @@ def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemmen
 
 def fct_qui_demande_a_l_utilisateur_ce_qu_il_veut():
     reponse = input(texte_qui_demande_a_l_utilisateur_ce_qu_il_veut)
-    fct_qui_verifie_que_l_utilisateur_ne_rentre_pas_n_importe_quoi(reponse)
+    fct_qui_verifie_que_l_utilisateur_ne_rentre_pas_n_importe_quoi_au_premier_input(reponse)
     while verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input == "Non" :
 
         reponse = input(texte_qui_re_demande_a_l_utilisateur_ce_qu_il_veut)
-        fct_qui_verifie_que_l_utilisateur_ne_rentre_pas_n_importe_quoi(reponse)
+        fct_qui_verifie_que_l_utilisateur_ne_rentre_pas_n_importe_quoi_au_premier_input(reponse)
 
 
     reponse = input(fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemment(reponse))

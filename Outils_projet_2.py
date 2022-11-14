@@ -1,6 +1,19 @@
 from data_nv2 import *
 
-#fonction qui verifie ce que entre l'utilisateur
+#fonction qui verifie ce que entre l'utilisateur du - au + précis :
+
+
+def fct_qui_verifie_que_l_utilisateur_ne_rentre_pas_n_importe_quoi_au_premier_input(reponse) :
+
+    if reponse in reponse_autoriser_au_premier_input :
+
+        verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input = "Oui"
+    else :
+        verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input = "Non"
+
+    return verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input
+
+#fonction qui verifie ce que entre l'utilisateur du - au + précis :
 
 def est_bon_prenom (a):
     return a in liste_prenoms
@@ -16,6 +29,9 @@ def verif_nom_ou_prenom_exist(a):
         return (est_bon_nom(a))
     else :
         return False
+
+
+
 
 
 #focntion pour creer des notes aléatoire dans le dico
@@ -127,13 +143,14 @@ def savoir_nombre_moyenne_gen_eleves_entre_n_et_m(moyenne_gen_entre_n_et_m):
     len(moyenne_gen_entre_n_et_m)
     return savoir_nombre_moyenne_gen_eleves_entre_n_et_m
 
-#Fontion recommmencer ou pas 
+#Fontion recommmencer --- > pas bon
 
-def fontion_main :
+
+
+def fct_pr_recommmencer:
     restart = str(input("Recommencer ? Oui ou Non"))
-    listn = ['N', 'n', 'non', 'Non', 'No', 'no']
-    if restart in listn:
+    if restart in commande_pour_quitter:
         break
-    elif restart not in listn:
+    elif restart not in commande_pour_quitter:
         pass
 
