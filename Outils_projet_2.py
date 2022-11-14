@@ -63,19 +63,10 @@ def notes_tous_les_eleves():
     return(liste_note_dans_une_matiere)
 
 
-<<<<<<< HEAD
+
 x = moyenne_de_tous_les_eleves_ds_une_matiere ()
 print(x)
 
-
-
-
-
-
-
-
-=======
->>>>>>> 949916dac582d3cc8e900ce89c400a767d371cf7
 def savoir_notes_eleves_sup_n (n):
 
     for i in range (nombre_eleves) :
