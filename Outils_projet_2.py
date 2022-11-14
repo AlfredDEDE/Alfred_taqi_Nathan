@@ -1,4 +1,4 @@
-from data import *
+from data_nv2 import *
 
 def est_bon_prenom (a):
     return a in liste_prenoms
@@ -31,7 +31,7 @@ def creer_des_notes():
 def moyenne (notes):
     somme = 0.0
     for i in range (len(notes)):
-        somme = somme + notes [i] 
+        somme = somme + notes [i]
         moyenne = somme / len(notes)
         reponse = moyenne
     return reponse
@@ -58,21 +58,23 @@ def notes_tous_les_eleves():
 
     return(liste_note_dans_une_matiere)
 
+def toutes_les_notes_d_un_eleve() :
+    for i in range(len()) :
+        liste_note_dans_une_matiere.append(notes)
+
+
+
+def moyenne_generale_d_un_eleve(notes) :
+        moyenne(notes)
+
 #La liste et/ou le nombre d'eleves ayant une moyenne en Maths supérieure à n/20
 
-<<<<<<< HEAD
-
-x = moyenne_de_tous_les_eleves_ds_une_matiere ()
-print(x)
-
-=======
->>>>>>> 6768aacc3784814597aa57728bde361283ef63c4
 def savoir_notes_eleves_sup_n (n):
 
     for i in range (nombre_eleves) :
         if moyenne_gen >= n:
             moyenne_sup_n.append()
-    return moyenne_sup_n 
+    return moyenne_sup_n
 
 def savoir_notes_eleves_inf_n (n):
     moyenne_inf_n = []
@@ -104,7 +106,7 @@ def savoir_moyenne_gen_eleves_sup_n (eleves_notes_gen_sup_m):
 
 #La liste et/ou le nombre d'eleves ayant une moyenne générale compris entre n1/20 et n2/20
 
-def moyenne_gen_entre_n_et_m (n,m):
+def moyenne_gen_d-eleve_entre_n_et_m (n,m):
     Intervalle_note = interval([n, m])
     for i in (nombre_eleves):
         if moyenne_generale_eleve in Intervalle_note :
