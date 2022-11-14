@@ -12,10 +12,11 @@ from data_nv2 import *
 
 
 def fct_qui_cherche_ds_le_dico_l_info():
+    x= 1
 
 
 
- def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemment(reponse):
+def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemment(reponse):
 
     if reponse == mot_clee_correpondant_au_texte1:
         question_plus_precise = 1
