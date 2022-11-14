@@ -2,8 +2,10 @@ from random import *
 from Outils_projet_2 import *
 from dico import *
 from data_nv2 import *
+reponse_autoriser_au_premier_input = []
 reponse = 0
 question_plus_precise = 0
+verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input = False
 
 #////////////////////////////////////////////////////////////////////////////
 
@@ -12,7 +14,17 @@ question_plus_precise = 0
 #fonction qui font ce que l'énoncé demande
 
 
-def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut():
+def fct_qui_verifie_que_l_utilisateur_ne_rentre_pas_n_importe_quoi(reponse) :
+
+    if reponse in reponse_autoriser_au_premier_input :
+
+        verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input = "Oui"
+    else :
+        verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input = "Non"
+
+    return verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input
+
+def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemment(reponse):
 
     if reponse == :
         question_plus_precise =
@@ -30,8 +42,16 @@ def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut():
 
 def fct_qui_demande_a_l_utilisateur_ce_qu_il_veut():
     reponse = input(texte_qui_demande_a_l_utilisateur_ce_qu_il_veut)
-    fct_qui_verifie_que_l_utilisateur_ne_rentre_pas_n_importe_quoi()
-    fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut()
+    fct_qui_verifie_que_l_utilisateur_ne_rentre_pas_n_importe_quoi(reponse)
+    while verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input == "Non" :
+
+        reponse = input(texte_qui_re_demande_a_l_utilisateur_ce_qu_il_veut)
+        fct_qui_verifie_que_l_utilisateur_ne_rentre_pas_n_importe_quoi(reponse)
+
+
+    reponse = input(fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemment(reponse))
+
+    return(reponse)
 
 def main():
 
