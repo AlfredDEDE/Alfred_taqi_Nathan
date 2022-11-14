@@ -7,28 +7,29 @@ dico_globale = { \
 
     "dico_theorique" : { \
 
-        "Prenom": {"Francais": creer_des_notes(), "Math": creer_des_notes(), \
-               "Histoire-Geo": creer_des_notes(), "Anglais": creer_des_notes(), \
-               "Espagnol": creer_des_notes(), \
-               "toutes les notes" : toutes_les_notes_d_un_eleve()  ,\
-               "generale" : moyenne_generale_d_un_eleve()}, \
+        "Prenom": {"Francais": creer_des_notes(nombre_de_note_par_matiere ), "Math": creer_des_notes(nombre_de_note_par_matiere ), \
+               "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere ), "Anglais": creer_des_notes(nombre_de_note_par_matiere ), \
+               "Espagnol": creer_des_notes(nombre_de_note_par_matiere ), \
+               }, \
 
         "Matière": {"Moyenne " : moyenne_eleves_gen_ds_une_matiere(), \
             "Moyenne de tous les eleves" :\
                 moyenne_de_tous_les_eleves_ds_une_matiere(), \
             "Notes de tous les eleves" : \
                 notes_de_tous_les_eleves_ds_une_matiere()
-                  } }, \
+                  }
 
 
-    dico_eleve_a_matiere_a_note  : {\
+         }, \
+
+
+    "dico_eleve_a_matiere_a_note": {\
 
 
         "sam" : {"Francais" : creer_des_notes(), "Math" : creer_des_notes(), \
                 "Histoire-Geo" : creer_des_notes() , "Anglais" :creer_des_notes(), \
                 "Espagnol" : creer_des_notes() , \
-                "toutes les notes" : toutes_les_notes_d_un_eleve()  ,\
-                "generale" : moyenne_generale_d_un_eleve() }, \
+                 }, \
 
         "johny" : {"Francais" : creer_des_notes(), "Math" : creer_des_notes(), \
                 "Histoire-Geo" : creer_des_notes() , "Anglais" :creer_des_notes(), \
@@ -50,7 +51,7 @@ dico_globale = { \
                 "Histoire-Geo" : creer_des_notes() , "Anglais" :creer_des_notes(), \
                 "Espagnol" : creer_des_notes() }, \
 
-     "usama" : {"Francais" : creer_des_notes(), "Math" : creer_des_notes(), \
+        "usama" : {"Francais" : creer_des_notes(), "Math" : creer_des_notes(), \
                 "Histoire-Geo" : creer_des_notes() , "Anglais" :creer_des_notes(), \
                 "Espagnol" : creer_des_notes() }, \
 
@@ -106,8 +107,7 @@ dico_globale = { \
             "Histoire-Geo": creer_des_notes(), "Anglais": creer_des_notes(), \
             "Espagnol": creer_des_notes()}, \
      \
-
-    dico_matiere_a_note : { \
+    "dico_matiere_a_note": { \
 
         "Francais": {"Moyenne " : moyenne_eleves_gen_ds_une_matiere(), \
             "Moyenne de tous les eleves" :\
@@ -145,8 +145,8 @@ dico_globale = { \
                   }, \
 
     } \
+
+
     }
     }
 
-x = dico_globale["dico_theorique"]["Prenom"]["Francais"]
-print(x)

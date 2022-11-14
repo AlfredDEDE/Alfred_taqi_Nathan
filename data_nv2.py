@@ -1,4 +1,7 @@
 # Créé par clatr, le 13/11/2022 en Python 3.7
+
+from random import *
+
 liste_prenoms = ["sam","johny","mat","remy","sacha","eva","usama","justin","gator"
                ,"jean","bubblebea","ines","paul","hugo","lebron","david","lana",
                "aubin","sylvain","masdak"]
@@ -19,6 +22,8 @@ eleves_notes_gen_sup_m = []
 moyenne_eleves_sup_n = []
 nombre_de_note_minimale = 3
 nombre_de_note_max = 8
+nombre_de_note_creer = 0
+nombre_de_note_par_matiere = 5
 
 texte_d_accueil = \
  "\n Bonjour bienvenue dans le programme pour demander la moyenne"\
@@ -34,19 +39,19 @@ commande_pour_quitter = \
      "je fuis" , "bonne journee", "sortir", "s", "n", ]
 
 texte_pour_re_demander_nom_eleve = \
-    input("\n L'une ou l'autre des situations suivantes s'est présentée :\n" \
+    ("\n L'une ou l'autre des situations suivantes s'est présentée :\n" \
     + " *) Vous avez entré un nom qui ne figure pas dans la liste d'eleve\n" \
     + " *) Vous avez entré une moyenne qui ne figure pas entre 0 et 20.\n" \
     +texte_pour_demander_nom_eleve)
 
 
- texte_sortie_programme = \
+texte_sortie_programme = \
    " Merci d avoir utilise ce programme et à la prochaine fois"
 
- eleves_notes_gen = []
+eleves_notes_gen = []
 
 
- def sortie_application ():
+def sortie_application ():
     print (texte_sortie_programme)
     exit ()
 
