@@ -2,10 +2,7 @@ from random import *
 from Outils_projet_2 import *
 from dico import *
 from data_nv2 import *
-reponse_autoriser_au_premier_input = []
-reponse = 0
-question_plus_precise = 0
-verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input = False
+
 
 #////////////////////////////////////////////////////////////////////////////
 

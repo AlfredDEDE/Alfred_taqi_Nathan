@@ -11,8 +11,13 @@ liste_noms = ["faitmal","sinz","legamos","fasol","touille","antouilette","fémal
              "emploi","boss","james","michigan","rhoades","sahalor","duryf",
              "code penal"]
 
-#quelque variables
-#utile pour des fonctions
+
+#variables utiles pour le paramètrage du programme
+
+nombre_eleves = len(liste_prenoms)
+nombre_de_note_par_matiere = 5
+
+#variables utile pour des fonctions
 
 notes = []
 liste_note_dans_une_matiere= []
@@ -24,24 +29,15 @@ nombre_de_note_creer = 0
 # c faux A CORRIGER TAQI --> Intervalle_entre_deux_notes = interval([n, m])
 eleves_notes_gen = []
 
-#variabkkles utiles pour le paramètrage du programme
+#variables utile pour les fct ds main
 
-nombre_eleves = len(liste_prenoms)
-nombre_de_note_par_matiere = 5
+
+reponse_autoriser_au_premier_input = []
+reponse = 0
+question_plus_precise = 0
 
 
 #variable pour raccourcire le main()
-
-texte_d_accueil = \
- "\n Bonjour bienvenue dans le programme pour demander la moyenne"\
- + "A tout moment vous pouvez sortir de l'application en tapant " + '"q"' + " ou " + '"quit"' + "\n"
-
-texte_pour_demander_nom_eleve_auquelle_on_cherche_sa_moyenne=\
- "Veuillez entrer le nom de l'eleve pour qui vous voulez savoir sa moyenne"
-
-texte_pour_demander_nom_eleve_auquelle_on_cherche_ses_notes_dans_toutes_les_matiere = \
-    "Veuillez entrer le nom de l'eleve pour qui vous voulez savoir ses notes"
-
 
 rejoue_commande = \
     ["y", "vasy", "go", "ok", "on y va", "let's go", "oui", "o", "O", "Oui"]
@@ -51,6 +47,37 @@ commande_pour_quitter = \
      "au revoir", "see u", "aurevoir", "salut", \
      "je fuis" , "bonne journee", "sortir", "s", "n", ]
 
+
+#textes utilise comme quesiton pr le main()
+
+texte_d_accueil = \
+ "\nBonjour bienvenue dans le programme. "\
+ + "\nCe programme vous permet de demander une multitude de chose en rapport avec la classe. "\
+ + "\nA tout moment vous pouvez sortir de l ' application en tapant " + '"q"' + " ou " + '"quit"'
+
+
+texte_sortie_programme = \
+   " Merci d avoir utilise ce programme et à la prochaine fois"
+
+
+texte_qui_demande_a_l_utilisateur_ce_qu_il_veut = \
+    "Que voulez-vous faire ?" + \
+    "\nVous avez le choix entre : " + \
+    "\n-texte1" + "\nLe mot clée correpondant est " + "mot_clee_correpondant_au_texte1" + \
+    "\n-texte2" + "\nLe mot clée correpondant est " + "mot_clee_correpondant_au_texte2" + \
+    "\n-texte3" + "\nLe mot clée correpondant est " + "mot_clee_correpondant_au_texte3" +\
+    "\n-texte4 " + "\nLe mot clée correpondant est " + "mot_clee_correpondant_au_texte4" + \
+    \
+    "\nMettez seulement le mot clée correpondant"
+
+#texte des questions plus précise
+
+texte_pour_demander_nom_eleve_auquelle_on_cherche_sa_moyenne=\
+ "Veuillez entrer le nom de l'eleve pour qui vous voulez savoir sa moyenne"
+
+texte_pour_demander_nom_eleve_auquelle_on_cherche_ses_notes_dans_toutes_les_matiere = \
+    "Veuillez entrer le nom de l'eleve pour qui vous voulez savoir ses notes"
+
 texte_pour_re_demander_nom_eleve_auquelle_on_cherche_sa_moyenne = \
     ("\n L'une ou l'autre des situations suivantes s'est présentée :\n" \
     + " *) Vous avez entré un nom qui ne figure pas dans la liste d'eleve\n" \
@@ -58,8 +85,9 @@ texte_pour_re_demander_nom_eleve_auquelle_on_cherche_sa_moyenne = \
     +texte_pour_demander_nom_eleve)
 
 
-texte_sortie_programme = \
-   " Merci d avoir utilise ce programme et à la prochaine fois"
+
+
+
 
 
 
