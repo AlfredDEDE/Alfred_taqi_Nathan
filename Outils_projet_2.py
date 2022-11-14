@@ -3,15 +3,14 @@ from data_nv2 import *
 #fonction qui verifie ce que entre l'utilisateur du - au + précis :
 
 
-def fct_qui_verifie_que_l_utilisateur_ne_rentre_pas_n_importe_quoi_au_premier_input(reponse) :
+def est_une_bonne_reponse_pr_lepremier_input(a):
+    return a in ensemble_des_mots_clees
 
-    if reponse in reponse_autoriser_au_premier_input :
-
-        verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input = "Oui"
+def fct_qui_verifie_que_l_utilisateur_ne_rentre_pas_n_importe_quoi_au_premier_input(reponse):
+    if est_une_bonne_reponse_pr_lepremier_input(reponse) == True:
+        return est_une_bonne_reponse_pr_lepremier_input(reponse)
     else :
-        verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input = "Non"
-
-    return verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input
+        return False
 
 #fonction qui verifie ce que entre l'utilisateur du - au + précis :
 
