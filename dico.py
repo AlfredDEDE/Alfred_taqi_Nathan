@@ -23,6 +23,8 @@ dico_globale = { \
          }, \
 
 
+    "dico_liste_de_prenom" :
+
     "dico_eleve_a_matiere_a_note": {\
 
 
