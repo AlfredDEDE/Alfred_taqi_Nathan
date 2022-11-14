@@ -62,6 +62,7 @@ def notes_tous_les_eleves():
 
     return(liste_note_dans_une_matiere)
 
+#La liste et/ou le nombre d'eleves ayant une moyenne en Maths supérieure à n/20
 
 <<<<<<< HEAD
 x = moyenne_de_tous_les_eleves_ds_une_matiere ()
@@ -96,8 +97,21 @@ def savoir_nbr_eleves_sup_n (savoir_notes_eleves_sup_n):
 def savoir_nbr_eleves_inf_n (savoir_notes_eleves_inf_n) :
     len(savoir_notes_eleves_inf_n())
 
-#La liste et/ou le nombre d'eleves ayant une moyenne en Maths supérieure à n/20
+
 
 #La liste et/ou le nombre d'eleves ayant n moyennes supérieures à m/20
 
+/
+/
+/
+/
+/
+
 #La liste et/ou le nombre d'eleves ayant une moyenne générale compris entre n1/20 et n2/20
+
+def moyenne_gen (n,m):
+    Intervalle_note = interval([n, m])
+    for i in eleves:
+        if moyenne_generqle_eleve in Intervalle_note :
+            eleves_notes_gen.append()
+    return eleves_notes_gen
