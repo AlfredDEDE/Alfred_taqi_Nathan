@@ -38,5 +38,5 @@ texte_pour_re_demander_nom_eleve = \
     +texte_pour_demander_nom_eleve
 
 
-
-
+ texte_sortie_programme = \
+   "\n Merci d avoir utilise ce programme et à la prochaine fois"
