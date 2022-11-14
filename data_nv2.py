@@ -34,11 +34,20 @@ commande_pour_quitter = \
      "je fuis" , "bonne journee", "sortir", "s", "n", ]
 
 texte_pour_re_demander_nom_eleve = \
-    "\nL'une ou l'autre des situations suivantes s'est présentée :\n" \
+    input("\n L'une ou l'autre des situations suivantes s'est présentée :\n" \
     + " *) Vous avez entré un nom qui ne figure pas dans la liste d'eleve\n" \
     + " *) Vous avez entré une moyenne qui ne figure pas entre 0 et 20.\n" \
-    +texte_pour_demander_nom_eleve
+    +texte_pour_demander_nom_eleve)
 
 
  texte_sortie_programme = \
-   "\n Merci d avoir utilise ce programme et à la prochaine fois"
+   " Merci d avoir utilise ce programme et à la prochaine fois"
+
+ eleves_notes_gen = []
+
+
+ def sortie_application ():
+    print (texte_sortie_programme)
+    exit ()
+
+
