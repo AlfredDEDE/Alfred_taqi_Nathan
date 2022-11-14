@@ -88,6 +88,7 @@ def savoir_notes_eleves_inf_n(n):
     return moyenne_inf_n
 
 
+
 def savoir_nbr_eleves_sup_n(savoir_notes_eleves_sup_n):
     len(savoir_notes_eleves_sup_n())
     return savoir_nbr_eleves_sup_n

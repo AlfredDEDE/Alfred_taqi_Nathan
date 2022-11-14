@@ -21,7 +21,8 @@ moyenne_inf_n = []
 eleves_notes_gen_sup_m = []
 moyenne_eleves_sup_n = []
 nombre_de_note_creer = 0
-Intervalle_entre_deux_notes = interval([n, m])
+# c faux A CORRIGER TAQI --> Intervalle_entre_deux_notes = interval([n, m])
+eleves_notes_gen = []
 
 #variabkkles utiles pour le paramètrage du programme
 
@@ -60,7 +61,7 @@ texte_pour_re_demander_nom_eleve_auquelle_on_cherche_sa_moyenne = \
 texte_sortie_programme = \
    " Merci d avoir utilise ce programme et à la prochaine fois"
 
-eleves_notes_gen = []
+
 
 
 def sortie_application ():
