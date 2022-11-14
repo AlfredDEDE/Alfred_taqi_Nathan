@@ -34,11 +34,13 @@ nombre_de_note_par_matiere = 5
 texte_d_accueil = \
  "\n Bonjour bienvenue dans le programme pour demander la moyenne"\
  + "A tout moment vous pouvez sortir de l'application en tapant " + '"q"' + " ou " + '"quit"' + "\n"
+
 texte_pour_demander_nom_eleve =\
  "Veuillez entrer le nom de l'eleve pour qui vous voulez savoir sa moyenne"
 
 rejoue_commande = \
     ["y", "vasy", "go", "ok", "on y va", "let's go", "oui", "o", "O", "Oui"]
+
 commande_pour_quitter = \
     ["q", "Q", "quitte", "Quit", "by", \
      "au revoir", "see u", "aurevoir", "salut", \

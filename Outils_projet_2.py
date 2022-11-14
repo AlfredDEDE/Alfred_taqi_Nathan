@@ -69,10 +69,7 @@ def moyenne_generale_d_un_eleve(notes):
 
 
 
-#fonction qui interagissent avec le dico
 
-
-#fonction qui font ce que l'énoncé demande
 
 # La liste et/ou le nombre d'eleves ayant une moyenne en Maths supérieure à n/20
 
