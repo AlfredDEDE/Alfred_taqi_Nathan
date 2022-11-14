@@ -62,15 +62,6 @@ def notes_tous_les_eleves():
     return(liste_note_dans_une_matiere)
 
 
-
-
-
-
-
-
-
-
-
 def savoir_notes_eleves_sup_n (n):
 
     for i in range (nombre_eleves) :
