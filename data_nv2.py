@@ -64,8 +64,5 @@ texte_sortie_programme = \
 
 
 
-def sortie_application ():
-    print (texte_sortie_programme)
-    exit ()
 
 

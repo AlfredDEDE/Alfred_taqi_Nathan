@@ -127,4 +127,13 @@ def savoir_nombre_moyenne_gen_eleves_entre_n_et_m(moyenne_gen_entre_n_et_m):
     len(moyenne_gen_entre_n_et_m)
     return savoir_nombre_moyenne_gen_eleves_entre_n_et_m
 
+#Fontion recommmencer ou pas 
+
+def fontion_main :
+    restart = str(input("Recommencer ? Oui ou Non"))
+    listn = ['N', 'n', 'non', 'Non', 'No', 'no']
+    if restart in listn:
+        break
+    elif restart not in listn:
+        pass
 
