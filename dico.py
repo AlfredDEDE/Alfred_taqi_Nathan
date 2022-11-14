@@ -5,18 +5,20 @@ from Outils_projet_2 import *
 
 dico_globale = { \
 
-    dico_theorique : { \
+    "dico_theorique" : { \
 
-        "  Prenom": {"Francais": creer_des_notes(), "Math": creer_des_notes(), \
+        "Prenom": {"Francais": creer_des_notes(), "Math": creer_des_notes(), \
                "Histoire-Geo": creer_des_notes(), "Anglais": creer_des_notes(), \
-               "Espagnol": creer_des_notes()}, \
+               "Espagnol": creer_des_notes(), \
+               "toutes les notes" : toutes_les_notes_d_un_eleve()  ,\
+               "generale" : moyenne_generale_d_un_eleve()}, \
 
         "Matière": {"Moyenne " : moyenne_eleves_gen_ds_une_matiere(), \
             "Moyenne de tous les eleves" :\
                 moyenne_de_tous_les_eleves_ds_une_matiere(), \
             "Notes de tous les eleves" : \
                 notes_de_tous_les_eleves_ds_une_matiere()
-                  }, \
+                  } }, \
 
 
     dico_eleve_a_matiere_a_note  : {\
@@ -24,7 +26,9 @@ dico_globale = { \
 
         "sam" : {"Francais" : creer_des_notes(), "Math" : creer_des_notes(), \
                 "Histoire-Geo" : creer_des_notes() , "Anglais" :creer_des_notes(), \
-                "Espagnol" : creer_des_notes() , "generale" : }, \
+                "Espagnol" : creer_des_notes() , \
+                "toutes les notes" : toutes_les_notes_d_un_eleve()  ,\
+                "generale" : moyenne_generale_d_un_eleve() }, \
 
         "johny" : {"Francais" : creer_des_notes(), "Math" : creer_des_notes(), \
                 "Histoire-Geo" : creer_des_notes() , "Anglais" :creer_des_notes(), \
@@ -142,6 +146,7 @@ dico_globale = { \
 
     } \
     }
+    }
 
-
-
+x = dico_globale["dico_theorique"]["Prenom"]["Francais"]
+print(x)
