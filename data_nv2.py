@@ -15,6 +15,8 @@ liste_note_dans_une_matiere= []
 nombre_eleves = len(liste_prenoms)
 moyenne_sup_n = []
 moyenne_inf_n = []
+eleves_notes_gen_sup_m = []
+moyenne_eleves_sup_n = []
 nombre_de_note_minimale = 3
 nombre_de_note_max = 8
 

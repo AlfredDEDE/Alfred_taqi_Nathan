@@ -83,25 +83,34 @@ def savoir_notes_eleves_inf_n (n):
 
 def savoir_nbr_eleves_sup_n (savoir_notes_eleves_sup_n):
     len(savoir_notes_eleves_sup_n())
+    return savoir_nbr_eleves_sup_n
 
 def savoir_nbr_eleves_inf_n (savoir_notes_eleves_inf_n) :
     len(savoir_notes_eleves_inf_n())
-
-
+    return savoir_nbr_eleves_inf_n 
 
 #La liste et/ou le nombre d'eleves ayant n moyennes supérieures à m/20
 
-/
-/
-/
-/
-/
+def nbr_moyenne_eleves_sup_n (m):
+    for i range (nombre_eleves):
+        if note_gen_eleve >= m :
+            eleves_notes_gen_sup_m.append()
+        return eleves_notes_gen_sup_m 
+
+def savoir_moyenne_gen_eleves_sup_n (eleves_notes_gen_sup_m):
+    len eleves_notes_gen_sup_m
+    return savoir_moyenne_gen_eleves_sup_n
+        
 
 #La liste et/ou le nombre d'eleves ayant une moyenne générale compris entre n1/20 et n2/20
 
 def moyenne_gen_entre_n_et_m (n,m):
     Intervalle_note = interval([n, m])
-    for i in eleves:
-        if moyenne_generqle_eleve in Intervalle_note :
+    for i in (nombre_eleves):
+        if moyenne_generale_eleve in Intervalle_note :
             eleves_notes_gen.append()
     return eleves_notes_gen
+
+def savoir_nombre_moyenne_gen_eleves_entre_n_et_m (moyenne_gen_entre_n_et_m):
+    len(moyenne_gen_entre_n_et_m)
+    return savoir_nombre_moyenne_gen_eleves_entre_n_et_m
