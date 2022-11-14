@@ -20,9 +20,13 @@ def verif_nom_ou_prenom_exist(a):
 
 #focntion pour creer des notes aléatoire dans le dico
 
+def creer_une_note():
+    notes.append(randint(0, 20))
+    return notes
+
 def creer_des_notes(nombre_de_note_a_creer):
     for i in range(nombre_de_note_a_creer):
-        notes.append(randint(0, 20))
+        creer_une_note()
     return notes
 
 def moyenne (notes):
@@ -114,9 +118,9 @@ def savoir_moyenne_gen_eleves_sup_n(eleves_notes_gen_sup_m):
 # La liste et/ou le nombre d'eleves ayant une moyenne générale compris entre n1/20 et n2/20
 
 def moyenne_gen_d_eleve_entre_n_et_m(n, m):
-    Intervalle_note = interval([n, m])
+
     for i in (nombre_eleves):
-        if moyenne_generale_eleve in Intervalle_note:
+        if moyenne_generale_eleve in Intervalle_entre_deux_notes:
             eleves_notes_gen.append()
     return eleves_notes_gen
 
@@ -124,3 +128,5 @@ def moyenne_gen_d_eleve_entre_n_et_m(n, m):
 def savoir_nombre_moyenne_gen_eleves_entre_n_et_m(moyenne_gen_entre_n_et_m):
     len(moyenne_gen_entre_n_et_m)
     return savoir_nombre_moyenne_gen_eleves_entre_n_et_m
+
+

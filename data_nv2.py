@@ -12,18 +12,24 @@ liste_noms = ["faitmal","sinz","legamos","fasol","touille","antouilette","fémal
              "code penal"]
 
 #quelque variables
+#utile pour des fonctions
 
 notes = []
 liste_note_dans_une_matiere= []
-nombre_eleves = len(liste_prenoms)
 moyenne_sup_n = []
 moyenne_inf_n = []
 eleves_notes_gen_sup_m = []
 moyenne_eleves_sup_n = []
-nombre_de_note_minimale = 3
-nombre_de_note_max = 8
 nombre_de_note_creer = 0
+Intervalle_entre_deux_notes = interval([n, m])
+
+#variabkkles utiles pour le paramètrage du programme
+
+nombre_eleves = len(liste_prenoms)
 nombre_de_note_par_matiere = 5
+
+
+#variable pour raccourcire le main()
 
 texte_d_accueil = \
  "\n Bonjour bienvenue dans le programme pour demander la moyenne"\
