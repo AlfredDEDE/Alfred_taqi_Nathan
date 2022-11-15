@@ -142,14 +142,30 @@ def savoir_nombre_moyenne_gen_eleves_entre_n_et_m(moyenne_gen_entre_n_et_m):
     len(moyenne_gen_entre_n_et_m)
     return savoir_nombre_moyenne_gen_eleves_entre_n_et_m
 
-#Fontion recommmencer --- > pas bon
+#Fontion recommmencer --- > nouvelle fct par Taqi 
+
+def replay ():
+    play = "yes"
+    while play in rejoue_commande:
+        main ()
+        play = input (texte_pour_rejouer)
 
 
-
-def fct_pr_recommmencer:
+'''def fct_pr_recommmencer:
     restart = str(input("Recommencer ? Oui ou Non"))
     if restart in commande_pour_quitter:
         break
     elif restart not in commande_pour_quitter:
-        pass
+        pass''' 
 
+#Fct intervalle
+
+def intervalle():
+    intervalle_n_et_m = [ mini , maxi ]
+    mini=int(input("entrez une valeur minimum"))
+    maxi=int(input("entrez une valeur maximum"))
+    if mini>maxi:
+        return "erreur , la note minimimum est plus grande que la note maximum"
+        exit()
+    else:
+    return intervalle_n_et_m

@@ -26,7 +26,8 @@ moyenne_inf_n = []
 eleves_notes_gen_sup_m = []
 moyenne_eleves_sup_n = []
 nombre_de_note_creer = 0
-# c faux A CORRIGER TAQI --> Intervalle_entre_deux_notes = interval([n, m])
+# c bon corrige , nouvelle fct intervalle dans outil + ligne de dessous
+intervalle_n_et_m = [ mini , maxi ]
 eleves_notes_gen = []
 verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input = "Non"
 
@@ -39,6 +40,9 @@ question_plus_precise = 0
 
 
 #variable pour raccourcire le main()
+
+texte_pour_rejouer = \
+    ["Voulez vous relancer une rechercher ?"]
 
 rejoue_commande = \
     ["y", "vasy", "go", "ok", "on y va", "let's go", "oui", "o", "O", "Oui" ,"yes"]
@@ -100,8 +104,51 @@ texte_pour_re_demander_nom_eleve_auquelle_on_cherche_sa_moyenne = \
     + " *) Vous avez entré une moyenne qui ne figure pas entre 0 et 20.\n" \
     +texte_pour_demander_nom_eleve_auquelle_on_cherche_sa_moyenne)
 
+# endessus ce sont les question que tu (alfred) m'a (Taqi) de faire :
 
 
+# La liste et/ou le nombre d’élèves ayant n moyennes supérieures à m/20 
+
+texte_pour_demander_la_liste_eleve_ayant_moyennes_supérieures_à_m/20  = \
+("Veuillez entrer la moyenne pour laquelle vous voulez savoir la liste ou nombre d’eleves ayant une moyenne generale supérieur a celle-ci”)
+
+texte_pour_redemander_la_liste_eleve_ayant_moyennes_supérieures_à_m/20= \ 
+("\n L'une ou l'autre des situations suivantes s'est présentée :\n"  "Vous n'avez pas entré un nombre" \
+ + ") Vous avez entré une moyenne qui ne figure pas entre 0 et 20.\n" \ +texte_pour_demander_nom_eleve)\
+
+texte_pr_demander_plus_precisement = ("Voulez vous la liste ou le nombre d’élèves")
+
+# La liste et/ou le nombre d’élèves ayant une moyenne en Maths supérieure à n/20
+
+texte_pour_demander_le_nombre_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n/20 = \
+("Veuillez entrer la moyenne pour laquelle vous voulez savoir la liste ou nombre d’eleve ayant une moyenne dans une matiere supérieur a celle-ci") + \
+ "\n Entrez en premier la moyenne puis une virgule et la matiere (Maths,Francais,HG, Anglais, Espagnol)" 
+
+texte_pour_redemander_nombre_eleve_ayant_une_moyenne_en_maths_supérieure_à_n/20 = \
+("\n L'une ou l'autre des situations suivantes s'est présentée :\n" \ + " Vous avez entré un nom qui ne figure pas dans la liste d'eleve\n" \
++ "Vous avez entré une moyenne qui ne figure pas entre 0 et 20.\n" \ +texte_pour_redemander_nombre_eleve_ayant_une_moyenne_en_maths_supérieure_à_n/20)\
+
+texte_pr_demander_plus_precisement = ("Voulez vous la liste ou le nombre d’élèves")
+
+# La liste et/ou le nombre d’élèves ayant une moyenne générale comprise entre n1/20 et n2/20
+
+texte_pour_demander_le_nombre_eleve_ayant_une_moyenne_entre_n1/20_et_n2/20 = \
+("Veuillez entrer la note n1 puis la note n2 pour trouver le nombre d'eleves ayant une moyenne entre elles")
+
+text_pour_redemander_le_nombre_eleve_ayant_une_moyenne_entre_n1/20_et_n2/20 = \
+("\n L'une ou l'autre des situations suivantes s'est présentée :\n" \ + " Vous avez entré une note n1 superieur a n2" \
+ + "Vous avez entré des notes qui ne sont pas entre 0 et 20" + texte_pour_demander_le_nombre_eleve_ayant_une_moyenne_entre_n1/20_et_n2/20)
+
+texte_pr_demander_plus_precisement = ("Voulez vous la liste ou le nombre d’élèves")
+
+#les notes de l’élève nom: "Jacquesson", prénom: "Michel"
+
+texte_pour_demander_le_nom_et_prenom_eleve = \
+("Veuillez entrer le nom puis le prenome de l'eleve recherché")
+
+texte_pour_redemander_le_nom_et_prenom_eleve = \
+("\n Le nom se trouve pas dans la base de donnée" \
++ texte_pour_demander_le_nom_et_prenom_eleve )
 
 
 
