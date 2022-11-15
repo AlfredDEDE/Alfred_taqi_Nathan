@@ -41,7 +41,7 @@ question_plus_precise = 0
 #variable pour raccourcire le main()
 
 rejoue_commande = \
-    ["y", "vasy", "go", "ok", "on y va", "let's go", "oui", "o", "O", "Oui"]
+    ["y", "vasy", "go", "ok", "on y va", "let's go", "oui", "o", "O", "Oui" ,"yes"]
 
 commande_pour_quitter = \
     ["q", "Q", "quitte", "Quit", "by", \
