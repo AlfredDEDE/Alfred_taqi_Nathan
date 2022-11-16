@@ -49,7 +49,7 @@ def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemmen
         if reponse in liste_noms :
             reponse = str(reponse)
             reponse = dico_globale["dico_liste_nom_a_prenom"][reponse]
-        
+
 
     return(reponse)
 
