@@ -166,11 +166,3 @@ texte_pour_demander_le_nom_et_prenom_eleve = \
 texte_pour_redemander_le_nom_et_prenom_eleve = \
 ("\n Le nom se trouve pas dans la base de donnée" \
 + texte_pour_demander_le_nom_et_prenom_eleve )
-
-
-
-
-
-
-
-
