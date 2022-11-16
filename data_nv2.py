@@ -91,7 +91,8 @@ texte_qui_demande_a_l_utilisateur_ce_qu_il_veut = \
     "\n-" + texte4 + "\nLe mot clée correpondant est " + mot_clee_correpondant_au_texte4 + \
     \
     "\nMettez seulement le mot clée correpondant"
-
+texte_qui_indique_que_la_note_pas_entre_0_et_20 = \
+    "\n La moyenne entrée n'est pas entre 0 et 20"  
 texte_qui_re_demande_a_l_utilisateur_ce_qu_il_veut = \
     "Vous n'avez pas entrer un mot clée" +\
     "\n Pensez à verifier l'orthographe" + \

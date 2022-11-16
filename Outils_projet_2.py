@@ -144,7 +144,7 @@ def savoir_nombre_moyenne_gen_eleves_entre_n_et_m(moyenne_gen_entre_n_et_m):
 
 
 
-#Fontion recommmencer --- > nouvelle fct par Taqi 
+#Fontion recommmencer --- > nouvelle fct par Taqi
 
 def replay ():
     play = "yes"
@@ -158,7 +158,7 @@ def replay ():
     if restart in commande_pour_quitter:
         break
     elif restart not in commande_pour_quitter:
-        pass''' 
+        pass'''
 
 #Fct intervalle
 
@@ -170,3 +170,12 @@ def intervalle(mini,maxi):
         exit()
     else:
         return intervalle_n_et_m
+
+#fontion qui verifie que l'utilisateur entre une moyenne entre 0 et 20
+
+def fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_comprise_entre_0_et_20 ():
+    if moyenne_gen_entre_n_et_m < 0 :
+        return texte_qui_indique_que_la_note_pas_entre_0_et_20
+    if moyenne_gen_entre_n_et_m < 20 :
+        return texte_qui_indique_que_la_note_pas_entre_0_et_20
+    else ...
