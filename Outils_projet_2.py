@@ -142,6 +142,8 @@ def savoir_nombre_moyenne_gen_eleves_entre_n_et_m(moyenne_gen_entre_n_et_m):
     len(moyenne_gen_entre_n_et_m)
     return savoir_nombre_moyenne_gen_eleves_entre_n_et_m
 
+
+
 #Fontion recommmencer --- > nouvelle fct par Taqi 
 
 def replay ():
@@ -160,12 +162,11 @@ def replay ():
 
 #Fct intervalle
 
-def intervalle():
+def intervalle(mini,maxi):
     intervalle_n_et_m = [ mini , maxi ]
-    mini=int(input("entrez une valeur minimum"))
-    maxi=int(input("entrez une valeur maximum"))
+
     if mini>maxi:
         return "erreur , la note minimimum est plus grande que la note maximum"
         exit()
     else:
-    return intervalle_n_et_m
+        return intervalle_n_et_m
