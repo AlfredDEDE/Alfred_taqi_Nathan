@@ -43,6 +43,7 @@ def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemmen
 
 def fct_qui_demande_a_l_utilisateur_ce_qu_il_veut():
     reponse = input(texte_qui_demande_a_l_utilisateur_ce_qu_il_veut)
+
     verification_positivie_ou_negative_sur_si_reponse_autorise_au_premier_input = \
     fct_qui_verifie_que_l_utilisateur_ne_rentre_pas_n_importe_quoi_au_premier_input(reponse)
 
