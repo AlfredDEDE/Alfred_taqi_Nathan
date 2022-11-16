@@ -23,7 +23,13 @@ dico_globale = { \
          }, \
 
 
-    "dico_liste_de_prenom" :
+    "dico_liste_nom_a_prenom" : \
+
+        {  "faitmal":"sam" , "sinz" : "johny" ,  "legamos" : "mat", "fasol" : "remy" ,"touille" : "sacha" , "antouilette" : "eva" \
+        , "fémal": "usama" , "ptipeu" : "justin" ,  "laligator": "gator"\
+        ,  "neimar" : "jean" ,  "lemagatron" : "bubblebea",  "alamaternite" : "ines" , "emploi" : "paul" ,  "boss" : "hugo", "james" : "lebron",\
+        "david" : "michigan","lana" :"rhoades", \
+          "sahalor" : "aubin",  "duryf" : "sylvain",  "code penal" :"masdak"  },\
 
     "dico_eleve_a_matiere_a_note": {\
 

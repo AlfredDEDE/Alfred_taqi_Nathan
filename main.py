@@ -11,10 +11,22 @@ from data_nv2 import *
 #fonction qui font ce que l'énoncé demande
 
 
+def fct_qui_cherche_ds_le_dico_les_notes_d_un_eleve(eleve):
+
+
+
 def fct_qui_cherche_ds_le_dico_l_info():
-    x= 1
+    fct_qui_cherche_ds_le_dico_l_nb_eleve_ayant_moyenne_generale_sup_ou_inf_a_n(n)
+    fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_sup_ou_inf_a_n(n)
 
+    fct_qui_cherche_ds_le_dico_l_nb_eleve_ayant_moyenne_matiere_sup_ou_inf_a_n(n,matiere)
+    fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_matiere_sup_ou_inf_a_n(n, matiere)
 
+    fct_qui_cherche_ds_le_dico_l_nb_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(n1,n2)
+    fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(n1,n2)
+
+    fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve(eleve)
+    fct_qui_cherche_ds_le_dico_les_notes_d_un_eleve(eleve)
 
 def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemment(reponse):
 
@@ -29,15 +41,15 @@ def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemmen
 
     if reponse == mot_clee_correpondant_au_texte4 :
         question_plus_precise1 = 4
-        reponse = input(texte_pour_demander_nom_eleve_auquelle_on_cherche_ses_notes_dans_toutes_les_matiere)
+        reponse = input(texte_pour_demander_nom_eleve_auquelle_on_cherche_ses_notes_ou_moyenne_dans_toutes_les_matiere)
 
         while  verif_nom_ou_prenom_exist(reponse) == False :
-            reponse = input(texte_pour_re_demander_nom_eleve_auquelle_on_cherche_sa_moyenne)
+            reponse = input(texte_pour_re_demander_nom_ou_prenom_eleve_auquelle_on_cherche_sa_moyenne)
 
-        reponse = input(texte_pour_demander_nom_eleve_auquelle_on_cherche_ses_notes_dans_toutes_les_matiere_nom_ou_prenom)
-
-        while verif_nom_ou_prenom_exist(reponse) == False:
-            reponse = input(texte_pour_re_demander_nom_eleve_auquelle_on_cherche_ses_notes_dans_toutes_les_matiere_nom_ou_prenom)
+        if reponse in liste_noms :
+            reponse = str(reponse)
+            reponse = dico_globale["dico_liste_nom_a_prenom"][reponse]
+        
 
     return(reponse)
 
