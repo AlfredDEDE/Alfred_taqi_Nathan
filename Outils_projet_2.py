@@ -40,16 +40,17 @@ def verif_nom_ou_prenom_exist(a):
 
 #focntion pour creer des notes aléatoire dans le dico (pas sur qu ca marche)
 
+
 def creer_une_note():
-    global notes
+
     notes  = randint(0, 20)
     return notes
 
-
 def creer_des_notes(nombre_de_note_a_creer):
+    des_notes = []
     for i in range(nombre_de_note_a_creer):
-        creer_une_note()
-        des_notes.append(notes)
+
+        des_notes.append(creer_une_note())
     return des_notes
 
 # fonction moyenne qui marche (verifié)
