@@ -177,5 +177,4 @@ texte_pour_demander_le_nom_et_prenom_eleve = \
 ("Veuillez entrer le nom puis le prénom de l'élève recherché")
 
 texte_pour_redemander_le_nom_et_prenom_eleve = \
-("\n Le nom se trouve pas dans la base de donnée" \
-+ texte_pour_demander_le_nom_et_prenom_eleve )
+("\n Le nom se trouve pas dans la base de donnée" + texte_pour_demander_le_nom_et_prenom_eleve )
