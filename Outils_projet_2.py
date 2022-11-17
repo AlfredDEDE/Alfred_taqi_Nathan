@@ -175,7 +175,6 @@ def intervalle(mini,maxi):
 
     if mini>maxi:
         return "erreur , la note minimimum est plus grande que la note maximum"
-        exit()
     else:
         return intervalle_n_et_m
 

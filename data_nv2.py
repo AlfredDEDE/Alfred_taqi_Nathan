@@ -114,11 +114,12 @@ texte_qui_re_demande_a_l_utilisateur_ce_qu_il_veut = \
 
 #texte des questions plus précise
 
-texte_pour_demander_nom_eleve_auquelle_on_cherche_sa_moyenne=\
- "Veuillez entrer le nom de l'eleve dont vous voulez savoir sa moyenne"
 
-texte_pour_demander_nom_eleve_auquelle_on_cherche_ses_notes_dans_toutes_les_matiere = \
-    "Veuillez entrer le nom de l'eleve dont vous voulez savoir ses notes"
+texte_pour_demander_nom_eleve_auquelle_on_cherche_info = \
+    "Veuillez entrez le prenom de l'eleve dont vous voulez savoir des infos"
+
+
+
 
 texte_pour_re_demander_nom_eleve_auquelle_on_cherche_sa_moyenne = \
     ("\n L'une ou l'autre des situations suivantes s'est présentée :\n" \

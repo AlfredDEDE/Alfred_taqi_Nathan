@@ -44,15 +44,24 @@ def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemmen
         question_plus_precise1 = texte_pour_demander_le_nombre_eleve_ayant_une_moyenne_entre_n1_sur_20_et_n2_sur_20
 
     if reponse == mot_clee_correpondant_au_texte4:
-        question_plus_precise1 = texte_pour_demander_nom_eleve_auquelle_on_cherche_ses_notes_ou_moyenne_dans_toutes_les_matiere
-        reponse = input(texte_pour_demander_nom_eleve_auquelle_on_cherche_ses_notes_ou_moyenne_dans_toutes_les_matiere)
+        question_plus_precise1 = texte_pour_demander_nom_eleve_auquelle_on_cherche_info
 
-        while verif_nom_ou_prenom_exist(reponse) == False:
+
+    reponse = input(question_plus_precise1)
+
+
+    while verif_nom_ou_prenom_exist(reponse) == False:
             reponse = input(texte_pour_re_demander_nom_ou_prenom_eleve_auquelle_on_cherche_sa_moyenne)
 
-        if reponse in liste_noms:
-            reponse = str(reponse)
-            reponse = dico_globale["dico_liste_nom_a_prenom"][reponse]
+
+
+
+
+
+
+    if reponse in liste_noms:
+        reponse = str(reponse)
+        reponse = dico_globale["dico_liste_nom_a_prenom"][reponse]
 
 
 
