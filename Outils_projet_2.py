@@ -29,6 +29,21 @@ def verif_nom_ou_prenom_exist(a):
     else :
         return False'''
 
+
+#fontion qui verifie que l'utilisateur entre une moyenne entre 0 et 20
+
+def fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_comprise_entre_0_et_20 (n):
+    if n < 0 :
+        return False
+    if n > 20 :
+        return False
+    else:
+        return True
+
+
+
+
+
 def verif_nom_ou_prenom_exist(a):
 
     if a in liste_prenoms :
@@ -178,12 +193,3 @@ def intervalle(mini,maxi):
     else:
         return intervalle_n_et_m
 
-#fontion qui verifie que l'utilisateur entre une moyenne entre 0 et 20
-
-def fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_comprise_entre_0_et_20 (n):
-    if n < 0 :
-        return False
-    if n > 20 :
-        return False
-    else:
-        return True
