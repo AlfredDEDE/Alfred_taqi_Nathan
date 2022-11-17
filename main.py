@@ -11,12 +11,16 @@ from data_nv2 import *
 #fonction qui font ce que l'énoncé demande
 
 
-def fct_qui_cherche_ds_le_dico_les_notes_d_un_eleve(eleve):
-    for i in range (nombre_de_notes)
+
+
+def fct_qui_cherche_ds_le_dico_les_notes_d_un_eleve_par_matière(eleve):
+    eleve = str(eleve)
+    return dico_globale["dico_eleve_a_matiere_a_note"][eleve]
 
 
 
 def fct_qui_cherche_ds_le_dico_l_info():
+
     fct_qui_cherche_ds_le_dico_l_nb_eleve_ayant_moyenne_generale_sup_ou_inf_a_n(n)
     fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_sup_ou_inf_a_n(n)
 
@@ -27,7 +31,7 @@ def fct_qui_cherche_ds_le_dico_l_info():
     fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(n1,n2)
 
     fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve(eleve)
-    fct_qui_cherche_ds_le_dico_les_notes_d_un_eleve(eleve)
+    fct_qui_cherche_ds_le_dico_les_notes_d_un_eleve_par_matière(eleve)
 
 def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemment(reponse):
 
