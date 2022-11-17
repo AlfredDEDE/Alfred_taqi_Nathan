@@ -99,20 +99,18 @@ def savoir_notes_eleves_sup_n(n):
 
 
 def savoir_notes_eleves_inf_n(n):
-    moyenne_inf_n = []
     for i in range(nombre_eleves):
         if moyenne_gen <= n:
             moyenne_inf_n.append()
-    return moyenne_inf_n
+    return len(moyenne_inf_n)
 
 
-
-def savoir_nbr_eleves_sup_n(savoir_notes_eleves_sup_n):
+def savoir_nbr_eleves_sup_n():
     len(savoir_notes_eleves_sup_n())
     return savoir_nbr_eleves_sup_n
 
 
-def savoir_nbr_eleves_inf_n(savoir_notes_eleves_inf_n):
+def savoir_nbr_eleves_inf_n():
     len(savoir_notes_eleves_inf_n())
     return savoir_nbr_eleves_inf_n
 
