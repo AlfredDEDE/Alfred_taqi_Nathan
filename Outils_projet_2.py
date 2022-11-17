@@ -57,15 +57,17 @@ def moyenne (notes):
         reponse = moyenne
     return reponse
 
-#Fontions qui calculent les moyennes de chaque eleve (marche pas)
-def notes_de_tous_les_eleves_ds_une_matiere ():
+#Fontions qui interagissent avec dico
+
+def notes_de_tous_les_eleves_ds_une_matiere (nom_de_la_matière):
     for i in range(nombre_eleves):
-        creer_des_notes()
-        liste_note_dans_une_matiere.append(moyenne(notes))
+        for y in range(nombre_de_notes_par_matiere) :
+            notes = dico_globale["dico_eleve_a_matiere_a_note"[liste_prenoms[i]][nom_de_la_matière]]
+            liste_note_dans_une_matiere.append(moyenne(notes))
 
     return(liste_note_dans_une_matiere)
 
-def moyenne_eleves_gen_ds_une_matiere(nom_de_la_matière):
+def moyenne_eleves_gen_ds_une_matiere():
     for i in range(nombre_eleves):
         creer_des_notes()
         liste_note_dans_une_matiere.append(moyenne(notes))

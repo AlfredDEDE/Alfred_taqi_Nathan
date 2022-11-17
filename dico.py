@@ -75,47 +75,66 @@ dico_globale = { \
             "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere ), "Anglais": creer_des_notes(nombre_de_note_par_matiere ), \
             "Espagnol": creer_des_notes(nombre_de_note_par_matiere )},
 
-        "bubblebea": {"Francais": creer_des_notes(), "Math": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Histoire-Geo": creer_des_notes(), "Anglais": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Espagnol": creer_des_notes()}, \
-
-        "ines": {"Francais": creer_des_notes(), "Math": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Histoire-Geo": creer_des_notes(), "Anglais": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Espagnol": creer_des_notes()}, \
-
-        "paul": {"Francais": creer_des_notes(), "Math": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Histoire-Geo": creer_des_notes(), "Anglais": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Espagnol": creer_des_notes()}, \
-
-        "hugo": {"Francais": creer_des_notes(), "Math": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Histoire-Geo": creer_des_notes(), "Anglais": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Espagnol": creer_des_notes()}, \
-
-        "lebron": {"Francais": creer_des_notes(), "Math": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Histoire-Geo": creer_des_notes(), "Anglais": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Espagnol": creer_des_notes()}, \
-
-        "david": {"Francais": creer_des_notes(nombre_de_note_par_matiere ), "Math": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere ), "Anglais": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Espagnol": creer_des_notes(nombre_de_note_par_matiere )}, \
-
-        "lana": {"Francais": creer_des_notes(nombre_de_note_par_matiere ), "Math": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere ), "Anglais": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Espagnol": creer_des_notes(nombre_de_note_par_matiere )}, \
-
-        "aubin": {"Francais": creer_des_notes(nombre_de_note_par_matiere ), "Math": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere ), "Anglais": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Espagnol": creer_des_notes(nombre_de_note_par_matiere )}, \
-
-        "sylvain": {"Francais": creer_des_notes(nombre_de_note_par_matiere ), "Math": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere ), "Anglais": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Espagnol": creer_des_notes(nombre_de_note_par_matiere )}, \
-
-        "masdak": {"Francais": creer_des_notes(nombre_de_note_par_matiere ), "Math": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere ), "Anglais": creer_des_notes(nombre_de_note_par_matiere ), \
-            "Espagnol": creer_des_notes(nombre_de_note_par_matiere )}, \
-     \
-    "dico_matiere_a_note": { \
+        "bubblebea": {"Francais": creer_des_notes(nombre_de_note_par_matiere),
+                      "Math": creer_des_notes(nombre_de_note_par_matiere), \
+                      "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere),
+                      "Anglais": creer_des_notes(nombre_de_note_par_matiere), \
+                      "Espagnol": creer_des_notes(nombre_de_note_par_matiere)}, \
+ \
+        "ines": {"Francais": creer_des_notes(nombre_de_note_par_matiere),
+                 "Math": creer_des_notes(nombre_de_note_par_matiere), \
+                 "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere),
+                 "Anglais": creer_des_notes(nombre_de_note_par_matiere), \
+                 "Espagnol": creer_des_notes(nombre_de_note_par_matiere)}, \
+ \
+        "paul": {"Francais": creer_des_notes(nombre_de_note_par_matiere),
+                 "Math": creer_des_notes(nombre_de_note_par_matiere), \
+                 "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere),
+                 "Anglais": creer_des_notes(nombre_de_note_par_matiere), \
+                 "Espagnol": creer_des_notes(nombre_de_note_par_matiere)}, \
+ \
+        "hugo": {"Francais": creer_des_notes(nombre_de_note_par_matiere),
+                 "Math": creer_des_notes(nombre_de_note_par_matiere), \
+                 "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere),
+                 "Anglais": creer_des_notes(nombre_de_note_par_matiere), \
+                 "Espagnol": creer_des_notes(nombre_de_note_par_matiere)}, \
+ \
+        "lebron": {"Francais": creer_des_notes(nombre_de_note_par_matiere),
+                   "Math": creer_des_notes(nombre_de_note_par_matiere), \
+                   "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere),
+                   "Anglais": creer_des_notes(nombre_de_note_par_matiere), \
+                   "Espagnol": creer_des_notes(nombre_de_note_par_matiere)}, \
+ \
+        "david": {"Francais": creer_des_notes(nombre_de_note_par_matiere),
+                  "Math": creer_des_notes(nombre_de_note_par_matiere), \
+                  "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere),
+                  "Anglais": creer_des_notes(nombre_de_note_par_matiere), \
+                  "Espagnol": creer_des_notes(nombre_de_note_par_matiere)}, \
+ \
+        "lana": {"Francais": creer_des_notes(nombre_de_note_par_matiere),
+                 "Math": creer_des_notes(nombre_de_note_par_matiere), \
+                 "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere),
+                 "Anglais": creer_des_notes(nombre_de_note_par_matiere), \
+                 "Espagnol": creer_des_notes(nombre_de_note_par_matiere)}, \
+ \
+        "aubin": {"Francais": creer_des_notes(nombre_de_note_par_matiere),
+                  "Math": creer_des_notes(nombre_de_note_par_matiere), \
+                  "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere),
+                  "Anglais": creer_des_notes(nombre_de_note_par_matiere), \
+                  "Espagnol": creer_des_notes(nombre_de_note_par_matiere)}, \
+ \
+        "sylvain": {"Francais": creer_des_notes(nombre_de_note_par_matiere),
+                    "Math": creer_des_notes(nombre_de_note_par_matiere), \
+                    "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere),
+                    "Anglais": creer_des_notes(nombre_de_note_par_matiere), \
+                    "Espagnol": creer_des_notes(nombre_de_note_par_matiere)}, \
+ \
+        "masdak": {"Francais": creer_des_notes(nombre_de_note_par_matiere),
+                   "Math": creer_des_notes(nombre_de_note_par_matiere), \
+                   "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere),
+                   "Anglais": creer_des_notes(nombre_de_note_par_matiere), \
+ \
+                   "dico_matiere_a_note": { \
 
         "Francais": {"Moyenne " : moyenne_eleves_gen_ds_une_matiere(), \
             "Moyenne de tous les eleves" :\
@@ -155,3 +174,4 @@ dico_globale = { \
     } \
     }
     }
+}
