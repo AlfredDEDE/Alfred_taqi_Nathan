@@ -92,7 +92,7 @@ texte_qui_demande_a_l_utilisateur_ce_qu_il_veut = \
     \
     "\nMettez seulement le mot clée correpondant"
 texte_qui_indique_que_la_note_pas_entre_0_et_20 = \
-    "\n La moyenne entrée n'est pas entre 0 et 20"  
+    "\n La moyenne entrée n'est pas entre 0 et 20"
 texte_qui_re_demande_a_l_utilisateur_ce_qu_il_veut = \
     "Vous n'avez pas entrer un mot clée" +\
     "\n Pensez à verifier l'orthographe" + \
@@ -103,14 +103,14 @@ texte_qui_re_demande_a_l_utilisateur_ce_qu_il_veut = \
 #texte des questions plus précise
 
 texte_pour_demander_nom_eleve_auquelle_on_cherche_sa_moyenne=\
- "Veuillez entrer le nom de l'eleve pour qui vous voulez savoir sa moyenne"
+ "Veuillez entrer le nom de l'eleve dont vous voulez savoir sa moyenne"
 
 texte_pour_demander_nom_eleve_auquelle_on_cherche_ses_notes_dans_toutes_les_matiere = \
-    "Veuillez entrer le nom de l'eleve pour qui vous voulez savoir ses notes"
+    "Veuillez entrer le nom de l'eleve dont vous voulez savoir ses notes"
 
 texte_pour_re_demander_nom_eleve_auquelle_on_cherche_sa_moyenne = \
     ("\n L'une ou l'autre des situations suivantes s'est présentée :\n" \
-    + " *) Vous avez entré un nom qui ne figure pas dans la liste d'eleve\n" \
+    + " *) Vous avez entré un nom qui ne figure pas dans la liste d'élève\n" \
     + " *) Vous avez entré une moyenne qui ne figure pas entre 0 et 20.\n" \
     +texte_pour_demander_nom_eleve_auquelle_on_cherche_sa_moyenne)
 
@@ -128,7 +128,7 @@ texte_pour_re_demander_nom_eleve_auquelle_on_cherche_ses_notes_dans_toutes_les_m
 # La liste et/ou le nombre d’élèves ayant n moyennes supérieures à m/20
 
 texte_pour_demander_la_liste_eleve_ayant_moyennes_supérieures_à_m/20  = \
-("Veuillez entrer la moyenne pour laquelle vous voulez savoir la liste ou nombre d’eleves ayant une moyenne generale supérieur a celle-ci”)
+ "Veuillez entrer la moyenne dont vous voulez savoir la liste ou le nombre d’élèves ayant une moyenne génerale supérieure a celle-ci”
 
 texte_pour_redemander_la_liste_eleve_ayant_moyennes_supérieures_à_m/20= \
 ("\n L'une ou l'autre des situations suivantes s'est présentée :\n"  "Vous n'avez pas entré un nombre" \
@@ -162,7 +162,7 @@ texte_pr_demander_plus_precisement = ("Voulez vous la liste ou le nombre d’él
 #les notes de l’élève nom: "Jacquesson", prénom: "Michel"
 
 texte_pour_demander_le_nom_et_prenom_eleve = \
-("Veuillez entrer le nom puis le prenome de l'eleve recherché")
+("Veuillez entrer le nom puis le prénom de l'élève recherché")
 
 texte_pour_redemander_le_nom_et_prenom_eleve = \
 ("\n Le nom se trouve pas dans la base de donnée" \
