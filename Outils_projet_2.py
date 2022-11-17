@@ -187,5 +187,4 @@ def fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_comprise_entre_0_et_20 (
     if n > 20 :
         return False
     else:
-        notes.append(n)
         return True
