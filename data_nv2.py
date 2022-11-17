@@ -137,12 +137,12 @@ texte_pour_re_demander_nom_eleve_auquelle_on_cherche_ses_notes_dans_toutes_les_m
 # endessus ce sont les question que tu (alfred) m'a (Taqi) de faire :
 
 
-# La liste et/ou le nombre d’élèves ayant n moyennes supérieures à m/20
+# La liste et/ou le nombre d’élèves ayant n moyennes supérieures à m sur 20
 
-texte_pour_demander_la_liste_eleve_ayant_moyennes_supérieures_à_m/20=\
+texte_pour_demander_la_liste_eleve_ayant_moyennes_supérieures_à_m_sur_20 = \
   "Entrer la moyenne dont vous voulez savoir la liste ou le nombre d’élèves ayant une moyenne génerale supérieure”
 
-texte_pour_redemander_la_liste_eleve_ayant_moyennes_supérieures_à_m/20= \
+texte_pour_redemander_la_liste_eleve_ayant_moyennes_supérieures_à_m_sur_20= \
 ("\n L'une ou l'autre des situations suivantes s'est présentée :\n"  "Vous n'avez pas entré un nombre" \
  + ") Vous avez entré une moyenne qui ne figure pas entre 0 et 20.\n" \ +texte_pour_demander_nom_eleve)\
 
@@ -150,13 +150,13 @@ texte_pr_demander_plus_precisement_liste_ou_note = ("Voulez vous la liste ou le 
 
 # La liste et/ou le nombre d’élèves ayant une moyenne en Maths supérieure à n/20
 
-texte_pour_demander_le_nombre_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n/20 = \
+texte_pour_demander_le_nombre_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20 = \
 ("Veuillez entrer la moyenne pour laquelle vous voulez savoir la liste ou nombre d’eleve ayant une moyenne dans une matiere supérieur a celle-ci") + \
  "\n Entrez en premier la moyenne puis une virgule et la matiere (Maths,Francais,HG, Anglais, Espagnol)"
 
-texte_pour_redemander_nombre_eleve_ayant_une_moyenne_en_maths_supérieure_à_n/20 = \
+texte_pour_redemander_nombre_eleve_ayant_une_moyenne_en_maths_supérieure_à_n_sur_20 = \
 ("\n L'une ou l'autre des situations suivantes s'est présentée :\n" \ + " Vous avez entré un nom qui ne figure pas dans la liste d'eleve\n" \
-+ "Vous avez entré une moyenne qui ne figure pas entre 0 et 20.\n" \ +texte_pour_redemander_nombre_eleve_ayant_une_moyenne_en_maths_supérieure_à_n/20)\
++ "Vous avez entré une moyenne qui ne figure pas entre 0 et 20.\n" \ +texte_pour_redemander_nombre_eleve_ayant_une_moyenne_en_maths_supérieure_à_n_sur_20)\
 
 texte_pr_demander_plus_precisement = ("Voulez vous la liste ou le nombre d’élèves")
 
