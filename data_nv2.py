@@ -35,8 +35,9 @@ eleves_notes_gen_sup_m = []
 moyenne_eleves_sup_n = []
 moyenne_inf_n = []
 nombre_de_note_creer = 0
-# c bon corrige , nouvelle fct intervalle dans outil + ligne de dessous
 des_notes = []
+ensemble_de_note_de_tout_les_matieres = []
+list_eleve = []
 
 
 note_entre_0_et_20 = []
@@ -124,7 +125,7 @@ texte_pour_re_demander_nom_eleve_auquelle_on_cherche_sa_moyenne = \
 
 
 texte_pour_re_demander_nom_eleve_auquelle_on_cherche_ses_notes_dans_toutes_les_matiere_nom_ou_prenom = \
-    "Ecrivez bien le nom ou prenom" + "Voici leur ecriture" + "sam","johny","mat","remy","sacha","eva","usama","justin","gator" +\
+    "Ecrivez bien le nom ou prenom" + "Voici leur ecriture" + "sam","johny","mat","remy","sacha","eva","usama","justin","gator"\
                ,"jean","bubblebea","ines","paul","hugo","lebron","david","lana", + \
                "aubin","sylvain","masdak" + \
     "\n" +  + \

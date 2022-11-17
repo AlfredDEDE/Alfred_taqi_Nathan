@@ -32,18 +32,30 @@ def verif_nom_ou_prenom_exist(a):
 
 #fontion qui verifie que l'utilisateur entre une moyenne entre 0 et 20
 
-def fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_comprise_entre_0_et_20 (n):
+
+
+def fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_qui_est_nombre(n):
+
     try:
-    int(n)
-    it_is = True
-    return texte_pour_redemander_note
-    else:
+        n = int(n)
+        bien_int = True
+
+    except ValueError:
+        bien_int = False
+
+
+def fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_comprise_entre_0_et_20 (n):
+
+    if fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_qui_est_nombre(n) == False :
+        return (False)
+
+    else :
         if n < 0 :
             return False
         if n > 20 :
             return False
         else:
-    return True
+            return True
 
 
 
@@ -174,8 +186,7 @@ def savoir_nombre_moyenne_gen_eleves_entre_n_et_m(moyenne_gen_entre_n_et_m):
 
 #Fontion recommmencer --- > nouvelle fct par Taqi (qui marche normalement)
 
-def replay ():
-    play = "yes"
+def replay (play):
     while play in rejoue_commande:
         main ()
         play = input (texte_pour_rejouer)

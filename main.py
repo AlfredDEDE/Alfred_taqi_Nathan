@@ -12,11 +12,28 @@ from data_nv2 import *
 
 
 
-
 def fct_qui_cherche_ds_le_dico_les_notes_d_un_eleve_par_matière(eleve):
     eleve = str(eleve)
     return dico_globale["dico_eleve_a_matiere_a_note"][eleve]
 
+def fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve(eleve):
+    eleve = str(eleve)
+
+    for i in range(nombre_de_matière):
+        matiere = liste_matiere[i]
+        ensemble_de_note_d_une_matiere = dico_globale["dico_eleve_a_matiere_a_note"][eleve][matiere]
+        print(ensemble_de_note_d_une_matiere)
+        ensemble_de_note_de_tout_les_matieres += ensemble_de_note_d_une_matiere
+
+    return moyenne(ensemble_de_note_de_tout_les_matieres)
+
+
+def fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(n1, n2):
+    for i in range(nombre_eleves):
+        eleve = list_eleve[i]
+
+        if n1 < fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve(eleve) < n2:
+            list_eleve.append(eleve)
 
 
 def fct_qui_cherche_ds_le_dico_l_info():
