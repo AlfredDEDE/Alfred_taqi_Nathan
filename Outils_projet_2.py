@@ -163,12 +163,11 @@ def replay ():
 
 #Fct intervalle
 
-def intervalle(mini,maxi):
+def fct_qui_verifie_que_intervalle_croisant_et_trie(mini,maxi):
     intervalle_n_et_m = [ mini , maxi ]
 
-    if mini>maxi:
-        return "erreur , la note minimimum est plus grande que la note maximum"
-        exit()
+    while mini>maxi:
+        return
     else:
         return intervalle_n_et_m
 
