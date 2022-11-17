@@ -33,12 +33,17 @@ def verif_nom_ou_prenom_exist(a):
 #fontion qui verifie que l'utilisateur entre une moyenne entre 0 et 20
 
 def fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_comprise_entre_0_et_20 (n):
-    if n < 0 :
-        return False
-    if n > 20 :
-        return False
+    try:
+    int(n)
+    it_is = True
+    return texte_pour_redemander_note
     else:
-        return True
+        if n < 0 :
+            return False
+        if n > 20 :
+            return False
+        else:
+    return True
 
 
 
@@ -192,4 +197,3 @@ def intervalle(mini,maxi):
         return "erreur , la note minimimum est plus grande que la note maximum"
     else:
         return intervalle_n_et_m
-
