@@ -36,6 +36,8 @@ moyenne_eleves_sup_n = []
 moyenne_inf_n = []
 nombre_de_note_creer = 0
 # c bon corrige , nouvelle fct intervalle dans outil + ligne de dessous
+des_notes = []
+
 
 note_entre_0_et_20 = []
 eleves_notes_gen = []
