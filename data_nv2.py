@@ -169,7 +169,7 @@ text_pour_redemander_le_nombre_eleve_ayant_une_moyenne_entre_n1_sur_20_et_n2_sur
 ("\n L'une ou l'autre des situations suivantes s'est présentée :\n"  + " Vous avez entré une note n1 superieur a n2" \
  + "Vous avez entré des notes qui ne sont pas entre 0 et 20" + texte_pour_demander_le_nombre_eleve_ayant_une_moyenne_entre_n1_sur_20_et_n2_sur_20)
 
-texte_pr_demander_plus_precisement = ("Voulez vous la liste ou le nombre d’élèves")
+texte_pr_demander_plus_precisement_la_liste_ou_le_nombre = ("Voulez vous la liste ou le nombre d’élèves")
 
 #les notes de l’élève nom: "Jacquesson", prénom: "Michel"
 
