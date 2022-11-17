@@ -65,7 +65,7 @@ def notes_de_tous_les_eleves_ds_une_matiere ():
 
     return(liste_note_dans_une_matiere)
 
-def moyenne_eleves_gen_ds_une_matiere():
+def moyenne_eleves_gen_ds_une_matiere(nom_de_la_matière):
     for i in range(nombre_eleves):
         creer_des_notes()
         liste_note_dans_une_matiere.append(moyenne(notes))
