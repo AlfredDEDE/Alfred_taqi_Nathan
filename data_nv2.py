@@ -13,6 +13,11 @@ liste_noms = ["faitmal","sinz","legamos","fasol","touille","antouilette","fémal
 
 liste_matiere = [ "Francais", "Math", "Histoire-Geo", "Anglais", "Espagnol" ]
 
+
+liste_note_moyenne_les_mots_autoriser = ["note","moyenne"]
+
+liste_nombre_liste_les_mots_autoriser = ["nombre","liste"]
+
 nombre_de_note_par_matiere = 5
 
 
@@ -22,7 +27,7 @@ nombre_de_note_par_matiere = 5
 #variables utiles pour le programme
 
 nombre_eleves = len(liste_prenoms)
-nombre_de_matière = len(liste_matière)
+nombre_de_matière = len(liste_matiere)
 nombre_de_note_totale = nombre_de_matière * nombre_de_note_par_matiere
 
 #variables utile pour des fonctions
@@ -42,7 +47,7 @@ list_eleve = []
 
 note_entre_0_et_20 = []
 eleves_notes_gen = []
-verification_positivie_ou_negative_sur_si_reponse_autorise_au_premier_input = "Non"
+verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input = False
 
 #variables utile pour les fct ds main
 
@@ -106,30 +111,21 @@ texte_qui_demande_a_l_utilisateur_ce_qu_il_veut = \
     "\nMettez seulement le mot clée correpondant"
 texte_qui_indique_que_la_note_pas_entre_0_et_20 = \
     "\n La moyenne entrée n'est pas entre 0 et 20"
+
 texte_qui_re_demande_a_l_utilisateur_ce_qu_il_veut = \
     "Vous n'avez pas entrer un mot clée" +\
-    "\n Pensez à verifier l'orthographe" + \
-    texte_qui_demande_a_l_utilisateur_ce_qu_il_veut
+    "\nPensez à verifier l'orthographe" + \
+    "\n" +  texte_qui_demande_a_l_utilisateur_ce_qu_il_veut
 
 
 texte_pour_demander_nom_eleve_auquelle_on_cherche_info = \
     "Veuillez entrez le prenom de l'eleve dont vous voulez savoir des infos"
 
-
-texte_pour_re_demander_nom_eleve_auquelle_on_cherche_sa_moyenne = \
-    ("\n L'une ou l'autre des situations suivantes s'est présentée :\n" \
-    + " *) Vous avez entré un nom qui ne figure pas dans la liste d'élève\n" \
-    + " *) Vous avez entré une moyenne qui ne figure pas entre 0 et 20.\n" \
-    +texte_pour_demander_nom_eleve_auquelle_on_cherche_sa_moyenne)
-
-
-
-texte_pour_re_demander_nom_eleve_auquelle_on_cherche_ses_notes_dans_toutes_les_matiere_nom_ou_prenom = \
+texte_pour_re_demander_nom_eleve_auquelle_on_cherche_info_dans_toutes_les_matiere_prenom = \
     "Ecrivez bien le nom ou prenom" + "Voici leur ecriture" + "sam","johny","mat","remy","sacha","eva","usama","justin","gator"\
-               ,"jean","bubblebea","ines","paul","hugo","lebron","david","lana", + \
+               ,"jean","bubblebea","ines","paul","hugo","lebron","david","lana", \
                "aubin","sylvain","masdak" + \
-    "\n" +  + \
-    "\n" + texte_pour_demander_nom_eleve_auquelle_on_cherche_ses_notes_dans_toutes_les_matiere_nom_ou_prenom
+    "\n" + texte_pour_demander_nom_eleve_auquelle_on_cherche_info
 
 
 texte_pour_demander_m_et_ainsi_avoire_la_liste_ou_le_nombre_eleve_ayant_moyennes_supérieures_à_m_sur_20 = \
@@ -144,8 +140,8 @@ texte_pour_demander_n_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyen
 
 # La liste et/ou le nombre d’élèves ayant une moyenne générale comprise entre n1/20 et n2/20
 
-texte_pour_demander_deux_notes_pour_avoir_le_nombre_eleve_ayant_une_moyenne_entre_n1_sur_20_et_n2_sur_20 = \
-("Veuillez entrer la note n1 puis la note n2 pour trouver le nombre d'eleves ayant une moyenne entre elles")
+texte_pour_demander_deux_notes_pour_avoir_le_nombre_ou_liste_eleve_ayant_une_moyenne_entre_n1_sur_20_et_n2_sur_20 = \
+("Veuillez entrer la note n1 puis la note n2 pour trouver le nombre ou la liste d'eleves ayant une moyenne entre elles")
 
 
 texte_pr_demander_plus_precisement_liste_ou_note = ("Voulez vous la liste ou le nombre d’élèves")

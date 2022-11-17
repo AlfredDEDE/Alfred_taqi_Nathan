@@ -14,24 +14,29 @@ def fct_qui_verifie_que_l_utilisateur_ne_rentre_pas_n_importe_quoi_au_premier_in
 
 #fonction qui verifie ce que entre l'utilisateur du - au + précis : (correction)
 
-'''def est_bon_prenom (a):
-    return a in liste_prenoms
-
-def est_bon_nom (a):
-    return a in liste_noms
 
 def verif_nom_ou_prenom_exist(a):
 
-    if est_bon_prenom (a) == True :
-        return (est_bon_prenom(a))
-    if est_bon_nom(a)== True :
-        return (est_bon_nom(a))
+    if a in liste_prenoms :
+        return True
+    if a in liste_noms:
+        return True
     else :
-        return False'''
+        return False
 
 
-#fontion qui verifie que l'utilisateur entre une moyenne entre 0 et 20
 
+def fct_qui_verifife_que_l_utilisateur_entre_soit_liste_soit_nombre(a):
+    if a in liste_nombre_liste_les_mots_autoriser :
+        return True
+    else :
+        return False
+
+def fct_qui_verifife_que_l_utilisateur_entre_soit_moyenne_soit_note(a):
+    if a in liste_note_moyenne_les_mots_autoriser :
+        return True
+    else :
+        return False
 
 
 def fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_qui_est_nombre(n):
@@ -58,17 +63,6 @@ def fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_comprise_entre_0_et_20 (
             return True
 
 
-
-
-
-def verif_nom_ou_prenom_exist(a):
-
-    if a in liste_prenoms :
-        return True
-    if a in liste_noms:
-        return True
-    else :
-        return False
 
 #focntion pour creer des notes aléatoire dans le dico (pas sur qu ca marche)
 

@@ -5,22 +5,7 @@ from Outils_projet_2 import *
 
 dico_globale = { \
 
-    "dico_theorique" : { \
 
-        "Prenom": {"Francais": creer_des_notes(nombre_de_note_par_matiere), "Math": creer_des_notes(nombre_de_note_par_matiere ), \
-               "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere ), "Anglais": creer_des_notes(nombre_de_note_par_matiere ), \
-               "Espagnol": creer_des_notes(nombre_de_note_par_matiere ), \
-               }, \
-
-        "Matière": {"Moyenne " : moyenne_eleves_gen_ds_une_matiere(), \
-            "Moyenne de tous les eleves" :\
-                moyenne_de_tous_les_eleves_ds_une_matiere(), \
-            "Notes de tous les eleves" : \
-                notes_de_tous_les_eleves_ds_une_matiere()
-                  }
-
-
-         }, \
 
 
     "dico_liste_nom_a_prenom" : \
@@ -136,44 +121,10 @@ dico_globale = { \
  \
                    "dico_matiere_a_note": { \
 
-        "Francais": {"Moyenne " : moyenne_eleves_gen_ds_une_matiere(), \
-            "Moyenne de tous les eleves" :\
-                moyenne_de_tous_les_eleves_ds_une_matiere(), \
-            "Notes de tous les eleves" : \
-                notes_de_tous_les_eleves_ds_une_matiere(),
-                  }, \
 
-        "Math": {"Moyenne " : moyenne_eleves_gen_ds_une_matiere(), \
-            "Moyenne de tous les eleves" :\
-                moyenne_de_tous_les_eleves_ds_une_matiere(), \
-            "Notes de tous les eleves" : \
-                notes_de_tous_les_eleves_ds_une_matiere(),
-                  }, \
-
-        "Histoire-Geo": {"Moyenne " : moyenne_eleves_gen_ds_une_matiere(), \
-            "Moyenne de tous les eleves" : \
-                moyenne_de_tous_les_eleves_ds_une_matiere(), \
-            "Notes de tous les eleves" : \
-                notes_de_tous_les_eleves_ds_une_matiere(),
-                  }, \
-
-        "Anglais": {"Moyenne " : moyenne_eleves_gen_ds_une_matiere(), \
-            "Moyenne de tous les eleves" :\
-                moyenne_de_tous_les_eleves_ds_une_matiere(), \
-            "Notes de tous les eleves" : \
-                notes_de_tous_les_eleves_ds_une_matiere(),
-                  }, \
-
-        "Espagnol": {"Moyenne " : moyenne_eleves_gen_ds_une_matiere(), \
-            "Moyenne de tous les eleves" :\
-                moyenne_de_tous_les_eleves_ds_une_matiere(), \
-            "Notes de tous les eleves" : \
-                notes_de_tous_les_eleves_ds_une_matiere(),
-                  }, \
-
-    } \
     }
     }
+}
 }
 
 
