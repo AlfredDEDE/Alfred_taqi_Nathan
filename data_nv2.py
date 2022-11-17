@@ -128,14 +128,23 @@ texte_pour_re_demander_nom_eleve_auquelle_on_cherche_info_dans_toutes_les_matier
     "\n" + texte_pour_demander_nom_eleve_auquelle_on_cherche_info
 
 
+texte_pr_demander_plus_precisement_moyenne_ou_note = ("Voulez vous la note ou le moyenne d’élèves")
+texte_pr_redemander_plus_precisement_moyenne_ou_note = "Ecrivez seulement 'moyenne' ou 'note' "
+
+
+
+
 texte_pour_demander_m_et_ainsi_avoire_la_liste_ou_le_nombre_eleve_ayant_moyennes_supérieures_à_m_sur_20 = \
     "Entrer la moyenne dont vous voulez savoir la liste ou le nombre d’élèves ayant une moyenne génerale supérieure"
 
 # La liste et/ou le nombre d’élèves ayant une moyenne en Maths supérieure à n/20
 
 texte_pour_demander_n_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20 = \
-("Veuillez entrer la moyenne pour laquelle vous voulez savoir la liste ou nombre d’eleve ayant une moyenne dans une matiere supérieur a celle-ci") + \
- "\n Entrez en premier la moyenne puis une virgule et la matiere (Maths,Francais,HG, Anglais, Espagnol)"
+"Veuillez entrer la moyenne pour laquelle vous voulez savoir la liste ou nombre d’eleve ayant une moyenne dans une matiere supérieur a celle-ci"
+
+
+texte_pour_demander_la_matiere_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20 = \
+ "Entrez la matiere (Maths,Francais,HG, Anglais, Espagnol)"
 
 
 # La liste et/ou le nombre d’élèves ayant une moyenne générale comprise entre n1/20 et n2/20
@@ -144,8 +153,8 @@ texte_pour_demander_deux_notes_pour_avoir_le_nombre_ou_liste_eleve_ayant_une_moy
 ("Veuillez entrer la note n1 puis la note n2 pour trouver le nombre ou la liste d'eleves ayant une moyenne entre elles")
 
 
-texte_pr_demander_plus_precisement_liste_ou_note = ("Voulez vous la liste ou le nombre d’élèves")
-
+texte_pr_demander_plus_precisement_liste_ou_nombre = "Voulez vous la liste ou le nombre d’élèves"
+texte_pr_redemander_plus_precisement_liste_ou_nombre = "Ecrivez seulement 'liste' ou 'nombre' "
 
 text_pour_redemander_une_note = \
 ("\n L'une ou l'autre des situations suivantes s'est présentée :\n"  +  \

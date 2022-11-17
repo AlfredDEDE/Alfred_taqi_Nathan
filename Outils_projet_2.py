@@ -63,6 +63,13 @@ def fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_comprise_entre_0_et_20 (
             return True
 
 
+def fct_qui_verifie_que_l_utilisateur_entre_une_matiere (n):
+    if n in liste_matiere :
+        return True
+    else :
+        return False
+
+
 
 #focntion pour creer des notes aléatoire dans le dico (pas sur qu ca marche)
 
