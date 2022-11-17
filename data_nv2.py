@@ -139,8 +139,8 @@ texte_pour_re_demander_nom_eleve_auquelle_on_cherche_ses_notes_dans_toutes_les_m
 
 # La liste et/ou le nombre d’élèves ayant n moyennes supérieures à m/20
 
-texte_pour_demander_la_liste_eleve_ayant_moyennes_supérieures_à_m/20  = \
- "Veuillez entrer la moyenne dont vous voulez savoir la liste ou le nombre d’élèves ayant une moyenne génerale supérieure a celle-ci”
+texte_pour_demander_la_liste_eleve_ayant_moyennes_supérieures_à_m/20=\
+  "Entrer la moyenne dont vous voulez savoir la liste ou le nombre d’élèves ayant une moyenne génerale supérieure”
 
 texte_pour_redemander_la_liste_eleve_ayant_moyennes_supérieures_à_m/20= \
 ("\n L'une ou l'autre des situations suivantes s'est présentée :\n"  "Vous n'avez pas entré un nombre" \
