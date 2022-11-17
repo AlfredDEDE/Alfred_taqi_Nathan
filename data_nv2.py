@@ -11,11 +11,19 @@ liste_noms = ["faitmal","sinz","legamos","fasol","touille","antouilette","fémal
              "emploi","boss","james","michigan","rhoades","sahalor","duryf",
              "code penal"]
 
+liste_matiere = [ "Francais", "Math", "Histoire-Geo", "Anglais", "Espagnol" ]
 
-#variables utiles pour le paramètrage du programme
+nombre_de_note_par_matiere = 5
+
+
+
+#/////////////////////////////////////////////////////////////////////////////
+
+#variables utiles pour le programme
 
 nombre_eleves = len(liste_prenoms)
-nombre_de_note_par_matiere = 5
+nombre_de_matière = len(liste_matière)
+nombre_de_note_totale = nombre_de_matière * nombre_de_note_par_matiere
 
 #variables utile pour des fonctions
 

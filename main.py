@@ -12,6 +12,7 @@ from data_nv2 import *
 
 
 def fct_qui_cherche_ds_le_dico_les_notes_d_un_eleve(eleve):
+    for i in range (nombre_de_notes)
 
 
 
