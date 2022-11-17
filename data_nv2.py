@@ -25,9 +25,11 @@ moyenne_sup_n = []
 moyenne_inf_n = []
 eleves_notes_gen_sup_m = []
 moyenne_eleves_sup_n = []
+moyenne_inf_n = []
 nombre_de_note_creer = 0
 # c bon corrige , nouvelle fct intervalle dans outil + ligne de dessous
 intervalle_n_et_m = [ mini , maxi ]
+note_entre_0_et_20 = []
 eleves_notes_gen = []
 verification_positivie_ou_negative_sur_si_reponse_autorise_au_premier_input = "Non"
 
@@ -167,8 +169,3 @@ texte_pour_demander_le_nom_et_prenom_eleve = \
 texte_pour_redemander_le_nom_et_prenom_eleve = \
 ("\n Le nom se trouve pas dans la base de donnée" \
 + texte_pour_demander_le_nom_et_prenom_eleve )
-
-
-# texte erreur
-
-texte_erreur_intervalle = "erreur , la note minimimum est plus grande que la note maximum"

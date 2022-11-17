@@ -93,26 +93,26 @@ def moyenne_generale_d_un_eleve(notes):
 
 def savoir_notes_eleves_sup_n(n):
     for i in range(nombre_eleves):
-        if moyenne_gen >= n:
+        if moyenne_eleves_gen_ds_une_matiere >= n:
             moyenne_sup_n.append()
-    return moyenne_sup_n
+    return len(moyenne_sup_n)
 
 
 def savoir_notes_eleves_inf_n(n):
     for i in range(nombre_eleves):
-        if moyenne_gen <= n:
+        if moyenne_eleves_gen_ds_une_matiere <= n:
             moyenne_inf_n.append()
     return len(moyenne_inf_n)
 
 
-def savoir_nbr_eleves_sup_n():
+'''def savoir_nbr_eleves_sup_n():
     len(savoir_notes_eleves_sup_n())
     return savoir_nbr_eleves_sup_n
 
 
 def savoir_nbr_eleves_inf_n():
     len(savoir_notes_eleves_inf_n())
-    return savoir_nbr_eleves_inf_n
+    return savoir_nbr_eleves_inf_n'''
 
 
 # La liste et/ou le nombre d'eleves ayant n moyennes supérieures à m/20
@@ -163,19 +163,22 @@ def replay ():
 
 #Fct intervalle
 
-def fct_qui_verifie_que_intervalle_croisant_et_trie(mini,maxi):
+def intervalle(mini,maxi):
     intervalle_n_et_m = [ mini , maxi ]
 
-    while mini>maxi:
-        return
+    if mini>maxi:
+        return "erreur , la note minimimum est plus grande que la note maximum"
+        exit()
     else:
         return intervalle_n_et_m
 
 #fontion qui verifie que l'utilisateur entre une moyenne entre 0 et 20
 
-def fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_comprise_entre_0_et_20 ():
-    if moyenne_gen_entre_n_et_m < 0 :
-        return texte_qui_indique_que_la_note_pas_entre_0_et_20
-    if moyenne_gen_entre_n_et_m < 20 :
-        return texte_qui_indique_que_la_note_pas_entre_0_et_20
-    else ...
+def fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_comprise_entre_0_et_20 (n):
+    if n < 0 :
+        return False
+    if n > 20 :
+        return False
+    else:
+        notes.append(n)
+        return True
