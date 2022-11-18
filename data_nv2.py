@@ -92,6 +92,7 @@ ensemble_des_mots_clees =  ["eleve_moyenne_diff_matiere" ,"eleve_moyenne_diff_ge
 
 texte_qui_demande_mot_clef = "Entrez les mots clef correspondants :"
 
+
 texte1 = "Si vous desirez savoir le nombre ou la liste d'eleve ayant une moyenne generale superieur ou inferieur à celle-ci " + texte_qui_demande_mot_clef
 texte2 = "Si vous desirez savoir le nombre ou la liste d'eleve ayant une moyenne dans une matière superieur ou inferieur à celle-ci " + texte_qui_demande_mot_clef
 texte3 = "Si vous desirez savoir le nombre ou la liste d'eleve ayant une moyenne generale comprise entre un intervalle" + texte_qui_demande_mot_clef

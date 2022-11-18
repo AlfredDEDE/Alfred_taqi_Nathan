@@ -214,11 +214,13 @@ def fct_qui_donne_ce_que_l_utilisateur_a_demander(resultat):
 
 def main():
 
-    reponse_sous_forme_de_4_critere = fct_qui_demande_a_l_utilisateur_ce_qu_il_veut()
-    resultat = fct_qui_cherche_ds_le_dico_l_info(reponse_sous_forme_de_4_critere[0],reponse_sous_forme_de_4_critere[1],reponse_sous_forme_de_4_critere[2], \
-                                            reponse_sous_forme_de_4_critere[3])
-    fct_qui_donne_ce_que_l_utilisateur_a_demander(resultat)
+    while reponse not in commande_pour_quitter:
 
+        reponse_sous_forme_de_4_critere = fct_qui_demande_a_l_utilisateur_ce_qu_il_veut()
+        resultat = fct_qui_cherche_ds_le_dico_l_info(reponse_sous_forme_de_4_critere[0],reponse_sous_forme_de_4_critere[1],reponse_sous_forme_de_4_critere[2], \
+                                            reponse_sous_forme_de_4_critere[3])
+        fct_qui_donne_ce_que_l_utilisateur_a_demander(resultat)
+    exit()
 
 #////////////////////////////////////////////////////////////////////////////
 
