@@ -125,5 +125,3 @@ dico_globale = { \
 }
 }
 
-
-print(moyenne(dico_globale["dico_eleve_a_matiere_a_note"]["david"]["Francais"]))

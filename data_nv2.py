@@ -68,10 +68,7 @@ texte_pour_rejouer = \
 rejoue_commande = \
     ["y", "vasy", "go", "ok", "on y va", "let's go", "oui", "o", "O", "Oui" ,"yes"]
 
-commande_pour_quitter = \
-    ["q", "Q", "quitte", "Quit", "by", \
-     "au revoir", "see u", "aurevoir", "salut", \
-     "je fuis" , "bonne journee", "sortir", "s", "n", ]
+
 
 
 #textes utilise comme quesiton pr le main()
@@ -79,7 +76,7 @@ commande_pour_quitter = \
 texte_d_accueil = \
  "\nBonjour bienvenue dans le programme. "\
  + "\nCe programme vous permet de demander une multitude de chose en rapport avec la classe. "\
- + "\nA tout moment vous pouvez sortir de l ' application en tapant " + '"q"' + " ou " + '"quit"'
+ + "\nA tout moment vous pouvez sortir de l ' application en tapant " + "q"
 
 
 texte_sortie_programme = \
@@ -113,6 +110,7 @@ texte_qui_demande_a_l_utilisateur_ce_qu_il_veut = \
     "\n-" + texte4 + "\nLe mot clée correpondant est " + mot_clee_correpondant_au_texte4 + \
     \
     "\nMettez seulement le mot clée correpondant"
+
 texte_qui_indique_que_la_note_pas_entre_0_et_20 = \
     "\n La moyenne entrée n'est pas entre 0 et 20"
 
@@ -149,10 +147,6 @@ texte_pour_demander_n_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyen
 
 texte_pour_demander_la_matiere_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20 = \
  "Entrez la matiere (Math,Francais,Histoire-Geo, Anglais, Espagnol)"
-
-texte_pour_demander_m_et_ainsi_avoire_la_liste_ou_le_nombre_eleve_ayant_moyennes_supérieures_à_m_sur_20 = \
-"Entrez une matière valide" +  \
-"\n" + texte_pour_demander_la_matiere_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20
 
 
 # La liste et/ou le nombre d’élèves ayant une moyenne générale comprise entre n1/20 et n2/20

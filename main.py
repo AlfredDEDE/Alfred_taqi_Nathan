@@ -221,6 +221,8 @@ def main():
 
 print(texte_d_accueil)
 
+print()
+
 main()
 
 print(texte_sortie_programme)
