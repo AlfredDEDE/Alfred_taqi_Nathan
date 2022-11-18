@@ -123,11 +123,22 @@ texte_qui_re_demande_a_l_utilisateur_ce_qu_il_veut = \
 texte_pour_demander_nom_eleve_auquelle_on_cherche_info = \
     "Veuillez entrez le prenom de l'eleve dont vous voulez savoir des infos"
 
+
+
+
+
+
+
+
+
 texte_pour_re_demander_nom_eleve_auquelle_on_cherche_info_dans_toutes_les_matiere_prenom = \
-    "Ecrivez bien le nom ou prenom" + "Voici leur ecriture" + "sam","johny","mat","remy","sacha","eva","usama","justin","gator"\
-               ,"jean","bubblebea","ines","paul","hugo","lebron","david","lana", \
-               "aubin","sylvain","masdak" + \
+    "Ecrivez bien le nom ou prenom" + " Voici leur ecriture " + \
+    "\n" + "sam","johny","mat","remy","sacha","eva","usama","justin","gator"\
+    ,"jean","bubblebea","ines","paul","hugo","lebron","david","lana", \
+    "aubin","sylvain","masdak" + \
     "\n" + texte_pour_demander_nom_eleve_auquelle_on_cherche_info
+
+
 
 
 texte_pr_demander_plus_precisement_moyenne_ou_note = ("Voulez vous la note ou la moyenne d’élèves")
@@ -148,6 +159,10 @@ texte_pour_demander_n_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyen
 texte_pour_demander_la_matiere_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20 = \
  "Entrez la matiere (Math,Francais,Histoire-Geo, Anglais, Espagnol)"
 
+
+texte_pour_redemander_la_matiere_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20  = \
+    "Attention a l'ortographe" + \
+    "\n" + texte_pour_demander_la_matiere_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20
 
 # La liste et/ou le nombre d’élèves ayant une moyenne générale comprise entre n1/20 et n2/20
 
