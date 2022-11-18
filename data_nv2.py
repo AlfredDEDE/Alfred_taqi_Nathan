@@ -92,6 +92,7 @@ ensemble_des_mots_clees =  ["eleve_moyenne_diff_matiere" ,"eleve_moyenne_diff_ge
 
 texte_qui_demande_mot_clef = "Entrez les mots clef correspondants :"
 
+
 texte1 = "Si vous desirez savoir le nombre ou la liste d'eleve ayant une moyenne generale superieur ou inferieur à celle-ci " + texte_qui_demande_mot_clef
 texte2 = "Si vous desirez savoir le nombre ou la liste d'eleve ayant une moyenne dans une matière superieur ou inferieur à celle-ci " + texte_qui_demande_mot_clef
 texte3 = "Si vous desirez savoir le nombre ou la liste d'eleve ayant une moyenne generale comprise entre un intervalle" + texte_qui_demande_mot_clef
@@ -140,7 +141,7 @@ texte_pr_redemander_plus_precisement_moyenne_ou_note = "Ecrivez seulement 'moyen
 texte_pour_demander_m_et_ainsi_avoire_la_liste_ou_le_nombre_eleve_ayant_moyennes_supérieures_à_m_sur_20 = \
     "Entrer la moyenne dont vous voulez savoir la liste ou le nombre d’élèves ayant une moyenne génerale supérieure"
 
-# La liste et/ou le nombre d’élèves ayant une moyenne en Maths supérieure à n/20
+# La liste et/ou le nombre d’élèves ayant une moyenne ds une matiere supérieure à n/20
 
 texte_pour_demander_n_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20 = \
 "Veuillez entrer la moyenne pour laquelle vous voulez savoir la liste ou nombre d’eleve ayant une moyenne dans une matiere supérieur a celle-ci"
@@ -149,7 +150,7 @@ texte_pour_demander_n_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyen
 texte_pour_demander_la_matiere_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20 = \
  "Entrez la matiere (Math,Francais,Histoire-Geo, Anglais, Espagnol)"
 
-texte_pour_re_demander_la_matiere_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20 = \
+texte_pour_demander_m_et_ainsi_avoire_la_liste_ou_le_nombre_eleve_ayant_moyennes_supérieures_à_m_sur_20 = \
 "Entrez une matière valide" +  \
 "\n" + texte_pour_demander_la_matiere_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20
 
