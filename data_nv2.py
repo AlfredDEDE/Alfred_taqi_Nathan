@@ -177,6 +177,3 @@ text_pour_redemander_une_note = \
  + " \n Vous avez entré des notes qui ne sont pas entre 0 et 20" + \
  "\n Vous n'avez pas entre de notes" + \
   "\n Vous n'avez pas entre de matière")
-
-texte_de_conclusion = \
-("Voici la liste , nombre, ou note aue vous recherchez") + reponse
