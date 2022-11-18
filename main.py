@@ -12,60 +12,113 @@ from data_nv2 import *
 
 
 
+
 def fct_qui_cherche_ds_le_dico_les_notes_d_un_eleve_par_matière(eleve):
     eleve = str(eleve)
     return dico_globale["dico_eleve_a_matiere_a_note"][eleve]
 
 def fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve(eleve):
+
+    global ensemble_de_note_de_tout_les_matieres
     eleve = str(eleve)
 
     for i in range(nombre_de_matière):
         matiere = liste_matiere[i]
         ensemble_de_note_d_une_matiere = dico_globale["dico_eleve_a_matiere_a_note"][eleve][matiere]
-        print(ensemble_de_note_d_une_matiere)
         ensemble_de_note_de_tout_les_matieres += ensemble_de_note_d_une_matiere
 
     return moyenne(ensemble_de_note_de_tout_les_matieres)
 
 
-def fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(n1, n2):
+
+
+def fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_sup_a_n(n1):
+    n1 = int(n1)
     for i in range(nombre_eleves):
-            eleve = list_eleve[i]
+        eleve = liste_prenoms[i]
+
+        if n1 < fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve(eleve):
+            list_eleve_cree.append(eleve)
+    return list_eleve_cree
+
+def fct_qui_cherche_ds_le_dico_le_nombre_eleve_ayant_moyenne_generale_sup_a_n(n1):
+    return len(fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_sup_a_n(n1))
+
+
+
+def fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(n1, n2):
+    global list_eleve_cree
+    n1 = int(n1)
+    n2 = int(n2)
+
+    for i in range(nombre_eleves):
+            eleve = liste_prenoms[i]
 
             if n1 < fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve(eleve) < n2:
-                list_eleve_cree = list_eleve_cree.append(eleve)
+                list_eleve_cree.append(eleve)
     return list_eleve_cree
 
 def fct_qui_cherche_ds_le_dico_le_nombre_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(n1, n2) :
     return len(fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(n1, n2))
 
 
-def fct_qui_cherche_ds_le_dico_l_info(cas,facteur1_principale,facteur2_secondaire_qd_deux_variables,facteur3_pr_precision):
 
+def fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve_dans_une_matière(eleve, matiere):
+    print(matiere)
+
+    moyenne_a_calculer = dico_globale["dico_eleve_a_matiere_a_note"][eleve][matiere]
+    moyenne_calculer_pr_une_matiere = moyenne(moyenne_a_calculer)
+
+    return moyenne_calculer_pr_une_matiere
+
+
+def fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_matiere_sup_a_n(n1, matiere):
+    n1 = int(n1)
+
+    for i in range(nombre_eleves):
+        eleve = liste_prenoms[i]
+        print(eleve)
+
+        if n1 < fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve_dans_une_matière(eleve,matiere):
+            list_eleve_cree.append(eleve)
+    return list_eleve_cree
+
+
+def fct_qui_cherche_ds_le_dico_l_nb_eleve_ayant_moyenne_matiere_sup_a_n(n1, matiere):
+    return len(fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_matiere_sup_a_n(n1, matiere))
+
+
+
+
+
+def fct_qui_cherche_ds_le_dico_l_info(cas,facteur1_principale,facteur2_secondaire_qd_deux_variables,facteur3_pr_precision):
 
     if cas == 1 :
         if facteur3_pr_precision == "liste" :
-            fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_sup_ou_inf_a_n(facteur1_principale)
+            resulat = fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_matiere_sup_a_n(facteur1_principale,facteur2_secondaire_qd_deux_variables)
+
         if facteur3_pr_precision == "nombre":
-            fct_qui_cherche_ds_le_dico_l_nb_eleve_ayant_moyenne_generale_sup_ou_inf_a_n(facteur1_principale)
+            resulat = fct_qui_cherche_ds_le_dico_l_nb_eleve_ayant_moyenne_matiere_sup_a_n(facteur1_principale, facteur2_secondaire_qd_deux_variables)
+
 
     if cas == 2:
         if facteur3_pr_precision == "liste":
-            fct_qui_cherche_ds_le_dico_l_nb_eleve_ayant_moyenne_matiere_sup_ou_inf_a_n(facteur1_principale,facteur2_secondaire_qd_deux_variables)
+            resulat = fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_sup_a_n(facteur1_principale)
         if facteur3_pr_precision == "nombre":
-            fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_matiere_sup_ou_inf_a_n(facteur1_principale, facteur2_secondaire_qd_deux_variables)
+            resulat = fct_qui_cherche_ds_le_dico_le_nombre_eleve_ayant_moyenne_generale_sup_a_n(facteur1_principale)
 
     if cas == 3:
         if facteur3_pr_precision == "liste":
-            fct_qui_cherche_ds_le_dico_l_nb_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(facteur1_principale,facteur2_secondaire_qd_deux_variables)
+            resulat =fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(facteur1_principale,facteur2_secondaire_qd_deux_variables)
         if facteur3_pr_precision == "nombre":
-            fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(facteur1_principale,facteur2_secondaire_qd_deux_variables)
+            resulat =fct_qui_cherche_ds_le_dico_le_nombre_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(facteur1_principale,facteur2_secondaire_qd_deux_variables)
 
     if cas == 4:
         if facteur3_pr_precision == "moyenne":
-            fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve(facteur1_principale)
+            resulat = fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve(facteur1_principale)
         if facteur3_pr_precision == "note":
-            fct_qui_cherche_ds_le_dico_les_notes_d_un_eleve_par_matière(facteur1_principale)
+            resulat = fct_qui_cherche_ds_le_dico_les_notes_d_un_eleve_par_matière(facteur1_principale)
+    return resulat
 
 def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemment(reponse):
     global question_plus_precise1
@@ -123,13 +176,13 @@ def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemmen
             reponse = input(texte_pr_redemander_plus_precisement_liste_ou_nombre)
 
         liste_ou_nombre = reponse
-        facteur2_pr_precision = liste_ou_nombre
+        facteur3_pr_precision = liste_ou_nombre
 
         if cas == 1:
             reponse = input(texte_pour_demander_la_matiere_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20)
             while fct_qui_verifie_que_l_utilisateur_entre_une_matiere(reponse) == False:
                 reponse = input(texte_pour_re_demander_la_matiere_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20)
-            facteur_3_secondaire_qd_deux_variables = reponse
+            facteur2_secondaire_qd_deux_variables = reponse
 
         if cas == 3:
             reponse = input(texte_pour_demander_deuxieme_notes_pour_avoir_le_nombre_ou_liste_eleve_ayant_une_moyenne_entre_n1_sur_20_et_n2_sur_20)
@@ -151,13 +204,17 @@ def fct_qui_demande_a_l_utilisateur_ce_qu_il_veut():
 
     return(fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemment(reponse))
 
+
+def fct_qui_donne_ce_que_l_utilisateur_a_demander(resultat):
+    print(resultat)
+
+
 def main():
 
-
-    print(fct_qui_cherche_ds_le_dico_l_info(fct_qui_demande_a_l_utilisateur_ce_qu_il_veut()[0][1][2][3] ))
-
-    fct_qui_traite_l_info()
-    fct_qui_donne_ce_que_l_utilisateur_a_demander()
+    reponse_sous_forme_de_4_critere = fct_qui_demande_a_l_utilisateur_ce_qu_il_veut()
+    resultat = fct_qui_cherche_ds_le_dico_l_info(reponse_sous_forme_de_4_critere[0],reponse_sous_forme_de_4_critere[1],reponse_sous_forme_de_4_critere[2], \
+                                            reponse_sous_forme_de_4_critere[3])
+    fct_qui_donne_ce_que_l_utilisateur_a_demander(resultat)
 
 
 #////////////////////////////////////////////////////////////////////////////

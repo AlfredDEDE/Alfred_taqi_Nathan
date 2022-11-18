@@ -117,13 +117,11 @@ dico_globale = { \
         "masdak": {"Francais": creer_des_notes(nombre_de_note_par_matiere),
                    "Math": creer_des_notes(nombre_de_note_par_matiere), \
                    "Histoire-Geo": creer_des_notes(nombre_de_note_par_matiere),
-                   "Anglais": creer_des_notes(nombre_de_note_par_matiere), \
+                   "Anglais": creer_des_notes(nombre_de_note_par_matiere),
+                   "Espagnol": creer_des_notes(nombre_de_note_par_matiere)}
  \
-                   "dico_matiere_a_note": { \
+ \
 
-
-    }
-    }
 }
 }
 

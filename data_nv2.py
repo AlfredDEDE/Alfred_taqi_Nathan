@@ -11,7 +11,7 @@ liste_noms = ["faitmal","sinz","legamos","fasol","touille","antouilette","fémal
              "emploi","boss","james","michigan","rhoades","sahalor","duryf",
              "code penal"]
 
-liste_matiere = [ "Francais", "Maths", "Histoire-Geo", "Anglais", "Espagnol" ]
+liste_matiere = [ "Francais", "Math", "Histoire-Geo", "Anglais", "Espagnol" ]
 
 
 liste_note_moyenne_les_mots_autoriser = ["note","moyenne"]
@@ -43,6 +43,7 @@ nombre_de_note_creer = 0
 des_notes = []
 ensemble_de_note_de_tout_les_matieres = []
 list_eleve = []
+list_eleve_cree = []
 
 
 facteur2_secondaire_qd_deux_variables = 0
@@ -130,7 +131,7 @@ texte_pour_re_demander_nom_eleve_auquelle_on_cherche_info_dans_toutes_les_matier
     "\n" + texte_pour_demander_nom_eleve_auquelle_on_cherche_info
 
 
-texte_pr_demander_plus_precisement_moyenne_ou_note = ("Voulez vous la note ou le moyenne d’élèves")
+texte_pr_demander_plus_precisement_moyenne_ou_note = ("Voulez vous la note ou la moyenne d’élèves")
 texte_pr_redemander_plus_precisement_moyenne_ou_note = "Ecrivez seulement 'moyenne' ou 'note' "
 
 
@@ -146,7 +147,7 @@ texte_pour_demander_n_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyen
 
 
 texte_pour_demander_la_matiere_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20 = \
- "Entrez la matiere (Maths,Francais,HG, Anglais, Espagnol)"
+ "Entrez la matiere (Math,Francais,Histoire-Geo, Anglais, Espagnol)"
 
 texte_pour_re_demander_la_matiere_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20 = \
 "Entrez une matière valide" +  \
