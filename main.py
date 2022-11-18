@@ -13,7 +13,7 @@ from data_nv2 import *
 
 
 
-def fct_qui_cherche_ds_le_dico_les_notes_d_un_eleve_par_matière(eleve):
+def fct_qui_cherche_ds_le_dico_les_notes_d_un_eleve_par_matiere(eleve):
     eleve = str(eleve)
     return dico_globale["dico_eleve_a_matiere_a_note"][eleve]
 
