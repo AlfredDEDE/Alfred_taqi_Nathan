@@ -11,7 +11,7 @@ liste_noms = ["faitmal","sinz","legamos","fasol","touille","antouilette","fémal
              "emploi","boss","james","michigan","rhoades","sahalor","duryf",
              "code penal"]
 
-liste_matiere = [ "Francais", "Math", "Histoire-Geo", "Anglais", "Espagnol" ]
+liste_matiere = [ "Francais", "Maths", "Histoire-Geo", "Anglais", "Espagnol" ]
 
 
 liste_note_moyenne_les_mots_autoriser = ["note","moyenne"]
@@ -45,9 +45,12 @@ ensemble_de_note_de_tout_les_matieres = []
 list_eleve = []
 
 
+facteur1_principale = 1
+facteur_3_secondaire_qd_deux_variables = 0
+
 note_entre_0_et_20 = []
 eleves_notes_gen = []
-verification_positivie_ou_negative_sur_si_reponse_autorisé_au_premier_input = False
+
 
 #variables utile pour les fct ds main
 
@@ -146,11 +149,22 @@ texte_pour_demander_n_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyen
 texte_pour_demander_la_matiere_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20 = \
  "Entrez la matiere (Maths,Francais,HG, Anglais, Espagnol)"
 
+texte_pour_re_demander_la_matiere_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20 = \
+"Entrez une matière valide" +  \
+"\n" + texte_pour_demander_la_matiere_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20
+
 
 # La liste et/ou le nombre d’élèves ayant une moyenne générale comprise entre n1/20 et n2/20
 
-texte_pour_demander_deux_notes_pour_avoir_le_nombre_ou_liste_eleve_ayant_une_moyenne_entre_n1_sur_20_et_n2_sur_20 = \
-("Veuillez entrer la note n1 puis la note n2 pour trouver le nombre ou la liste d'eleves ayant une moyenne entre elles")
+
+
+texte_pour_demander_première_notes_pour_avoir_le_nombre_ou_liste_eleve_ayant_une_moyenne_entre_n1_sur_20_et_n2_sur_20 = \
+("Veuillez entrer la note n1  pour trouver le nombre ou la liste d'eleves ayant une moyenne entre elles")
+
+texte_pour_demander_deuxieme_notes_pour_avoir_le_nombre_ou_liste_eleve_ayant_une_moyenne_entre_n1_sur_20_et_n2_sur_20 = \
+("Veuillez entrer la note n2  pour trouver le nombre ou la liste d'eleves ayant une moyenne entre elles, tel que n soit supérieur a n1")
+
+
 
 
 texte_pr_demander_plus_precisement_liste_ou_nombre = "Voulez vous la liste ou le nombre d’élèves"

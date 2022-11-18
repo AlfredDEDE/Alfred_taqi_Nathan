@@ -48,6 +48,7 @@ def fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_qui_est_nombre(n):
     except ValueError:
         bien_int = False
 
+    return bien_int
 
 def fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_comprise_entre_0_et_20 (n):
 
@@ -55,6 +56,7 @@ def fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_comprise_entre_0_et_20 (
         return (False)
 
     else :
+        n = eval(n)
         if n < 0 :
             return False
         if n > 20 :
@@ -204,7 +206,6 @@ def replay (play):
 
 def intervalle(mini,maxi):
     intervalle_n_et_m = [ mini , maxi ]
-
     if mini>maxi:
         return "erreur , la note minimimum est plus grande que la note maximum"
     else:

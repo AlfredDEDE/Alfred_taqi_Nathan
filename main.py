@@ -29,12 +29,12 @@ def fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve(eleve):
 
 
 def fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(n1, n2):
-   for i in range(nombre_eleves):
+    for i in range(nombre_eleves):
             eleve = list_eleve[i]
 
             if n1 < fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve(eleve) < n2:
-                list_eleve.append(eleve)
-        return list_eleve
+                list_eleve_cree = list_eleve_cree.append(eleve)
+    return list_eleve_cree
 
 def fct_qui_cherche_ds_le_dico_le_nombre_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(n1, n2) :
     return len(fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(n1, n2))
@@ -69,17 +69,20 @@ def fct_qui_cherche_ds_le_dico_l_info():
 
 def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemment(reponse):
     global question_plus_precise1
+    global facteur1_principale
+    global facteur2_pr_precision
+    global facteur_3_secondaire_qd_deux_variables
 
     if reponse == mot_clee_correpondant_au_texte1:
-        question_plus_precise1 = texte_pour_demander_m_et_ainsi_avoire_la_liste_ou_le_nombre_eleve_ayant_moyennes_supérieures_à_m_sur_20
+        question_plus_precise1 = texte_pour_demander_n_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20
         cas = 1
 
     if reponse == mot_clee_correpondant_au_texte2:
-        question_plus_precise1 = texte_pour_demander_n_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20
+        question_plus_precise1 = texte_pour_demander_m_et_ainsi_avoire_la_liste_ou_le_nombre_eleve_ayant_moyennes_supérieures_à_m_sur_20
         cas = 2
 
     if reponse == mot_clee_correpondant_au_texte3:
-        question_plus_precise1 = texte_pour_demander_deux_notes_pour_avoir_le_nombre_ou_liste_eleve_ayant_une_moyenne_entre_n1_sur_20_et_n2_sur_20
+        question_plus_precise1 = texte_pour_demander_première_notes_pour_avoir_le_nombre_ou_liste_eleve_ayant_une_moyenne_entre_n1_sur_20_et_n2_sur_20
         cas = 3
 
     if reponse == mot_clee_correpondant_au_texte4:
@@ -90,14 +93,14 @@ def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemmen
 
     if cas == 4 :
         while verif_nom_ou_prenom_exist(reponse) == False:
-                reponse = input(texte_pour_re_demander_nom_ou_prenom_eleve_auquelle_on_cherche_sa_moyenne)
+                reponse = input(texte_pour_re_demander_nom_eleve_auquelle_on_cherche_info_dans_toutes_les_matiere_prenom)
 
         if reponse in liste_noms:
             reponse = str(reponse)
-            reponse = dico_globale["dico_liste_nom_a_prenom"][reponse]
-            nom_eleve = reponse
-            facteur1_principale = nom_eleve
-            reponse = input(texte_pr_demander_plus_precisement_moyenne_ou_note)
+            nom_eleve = dico_globale["dico_liste_nom_a_prenom"][reponse]
+
+        facteur1_principale = nom_eleve
+        reponse = input(texte_pr_demander_plus_precisement_moyenne_ou_note)
 
         while fct_qui_verifife_que_l_utilisateur_entre_soit_moyenne_soit_note(reponse) == False:
             reponse = input(texte_pr_redemander_plus_precisement_moyenne_ou_note)
@@ -105,7 +108,7 @@ def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemmen
         moyenne_ou_note = reponse
         facteur2_pr_precision = moyenne_ou_note
 
-    else :
+    else:
 
         while fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_comprise_entre_0_et_20(reponse) == False:
             reponse = input(text_pour_redemander_une_note)
@@ -114,15 +117,24 @@ def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemmen
         facteur1_principale = note
 
         reponse = input(texte_pr_demander_plus_precisement_liste_ou_nombre)
-        while fct_qui_verifife_que_l_utilisateur_entre_soit_moyenne_soit_note(reponse) == False:
+        while fct_qui_verifife_que_l_utilisateur_entre_soit_liste_soit_nombre(reponse) == False:
             reponse = input(texte_pr_redemander_plus_precisement_liste_ou_nombre)
 
         liste_ou_nombre = reponse
         facteur2_pr_precision = liste_ou_nombre
 
-        if cas == 2 :
+        if cas == 1:
             reponse = input(texte_pour_demander_la_matiere_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20)
+            while fct_qui_verifie_que_l_utilisateur_entre_une_matiere(reponse) == False:
+                reponse = input(texte_pour_re_demander_la_matiere_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20)
+            facteur_3_secondaire_qd_deux_variables = reponse
 
+        if cas == 3:
+            reponse = input(texte_pour_demander_deuxieme_notes_pour_avoir_le_nombre_ou_liste_eleve_ayant_une_moyenne_entre_n1_sur_20_et_n2_sur_20)
+
+            while fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_comprise_entre_0_et_20(reponse) == False:
+                reponse = input(text_pour_redemander_une_note)
+            facteur_3_secondaire_qd_deux_variables = reponse
 
     return (facteur1_principale,facteur2_pr_precision,facteur_3_secondaire_qd_deux_variables)
 
