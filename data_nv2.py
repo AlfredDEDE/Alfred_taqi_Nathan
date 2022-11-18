@@ -87,7 +87,7 @@ texte_sortie_programme = \
 ensemble_des_mots_clees =  ["eleve_moyenne_diff_matiere" ,"eleve_moyenne_diff_generale", \
                            "eleve_moyenne_comprise_entre_deux_notes", "eleve_notes_ou_moyenne" ]
 
-texte_qui_demande_mot_clef = "Entrez les mots clef correspondants : \n"
+texte_qui_demande_mot_clef = "\n Entrez les mots clef correspondants : "
 
 
 texte1 = "Si vous desirez savoir le nombre ou la liste d'eleve ayant une moyenne generale superieur ou inferieur à celle-ci. " + texte_qui_demande_mot_clef
@@ -104,10 +104,10 @@ mot_clee_correpondant_au_texte4 = "eleve_notes_ou_moyenne"
 texte_qui_demande_a_l_utilisateur_ce_qu_il_veut = \
     "Que voulez-vous faire ?" + \
     "\nVous avez le choix entre : " + \
-    "\n-" + texte1 + "\nLe mot clée correpondant est " + mot_clee_correpondant_au_texte1 + \
-    "\n-" + texte2 + "\nLe mot clée correpondant est " + mot_clee_correpondant_au_texte2 + \
-    "\n-" + texte3 + "\nLe mot clée correpondant est " + mot_clee_correpondant_au_texte3 +\
-    "\n-" + texte4 + "\nLe mot clée correpondant est " + mot_clee_correpondant_au_texte4 + \
+    "\n-" + texte1 + "\nLe mot clée correpondant est " + mot_clee_correpondant_au_texte1 + "\n" \
+    "\n-" + texte2 + "\nLe mot clée correpondant est " + mot_clee_correpondant_au_texte2 + "\n" \
+    "\n-" + texte3 + "\nLe mot clée correpondant est " + mot_clee_correpondant_au_texte3 + "\n" \
+    "\n-" + texte4 + "\nLe mot clée correpondant est " + mot_clee_correpondant_au_texte4 + "\n" \
     \
     "\nMettez seulement le mot clée correpondant"
 
@@ -132,8 +132,8 @@ texte_pour_demander_nom_eleve_auquelle_on_cherche_info = \
 
 
 texte_pour_re_demander_nom_eleve_auquelle_on_cherche_info_dans_toutes_les_matiere_prenom = \
-    "Ecrivez bien le nom ou prenom" + " Voici leur ecriture " + \
-    "\n" + "sam","johny","mat","remy","sacha","eva","usama","justin","gator"\
+    "Ecrivez bien le nom ou prenom " + " Voici leur ecriture " + \
+    "sam","johny","mat","remy","sacha","eva","usama","justin","gator"\
     ,"jean","bubblebea","ines","paul","hugo","lebron","david","lana", \
     "aubin","sylvain","masdak" + \
     "\n" + texte_pour_demander_nom_eleve_auquelle_on_cherche_info

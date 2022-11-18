@@ -218,7 +218,7 @@ def fct_qui_demande_a_l_utilisateur_ce_qu_il_veut():
 
 def fct_qui_donne_ce_que_l_utilisateur_a_demander(resultat):
     print( "Voici ce que vous avez demander : " + "\n" + \
-           "La liste/nombre/moyenne/notes sont / est  : \n" ) 
+           "La liste/nombre/moyenne/notes sont/est  : \n" ) 
     print(resultat)
 
 
