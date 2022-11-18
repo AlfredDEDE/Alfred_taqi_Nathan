@@ -40,38 +40,39 @@ def fct_qui_cherche_ds_le_dico_le_nombre_eleve_ayant_moyenne_generale_comprise_e
     return len(fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(n1, n2))
 
 
-def fct_qui_cherche_ds_le_dico_l_info():
+def fct_qui_cherche_ds_le_dico_l_info(cas,facteur1_principale,facteur2_secondaire_qd_deux_variables,facteur3_pr_precision):
 
 
     if cas == 1 :
-        if liste_ou_nombre == "liste" :
+        if facteur3_pr_precision == "liste" :
             fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_sup_ou_inf_a_n(facteur1_principale)
-        if liste_ou_nombre == "nombre":
+        if facteur3_pr_precision == "nombre":
             fct_qui_cherche_ds_le_dico_l_nb_eleve_ayant_moyenne_generale_sup_ou_inf_a_n(facteur1_principale)
 
     if cas == 2:
-        if liste_ou_nombre == "liste":
-            fct_qui_cherche_ds_le_dico_l_nb_eleve_ayant_moyenne_matiere_sup_ou_inf_a_n(facteur1_principale,matiere)
-        if liste_ou_nombre == "nombre":
-            fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_matiere_sup_ou_inf_a_n(facteur1_principale, matiere)
+        if facteur3_pr_precision == "liste":
+            fct_qui_cherche_ds_le_dico_l_nb_eleve_ayant_moyenne_matiere_sup_ou_inf_a_n(facteur1_principale,facteur2_secondaire_qd_deux_variables)
+        if facteur3_pr_precision == "nombre":
+            fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_matiere_sup_ou_inf_a_n(facteur1_principale, facteur2_secondaire_qd_deux_variables)
 
     if cas == 3:
-        if liste_ou_nombre == "liste":
-            fct_qui_cherche_ds_le_dico_l_nb_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(n1,n2)
-        if liste_ou_nombre == "nombre":
-            fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(n1,n2)
+        if facteur3_pr_precision == "liste":
+            fct_qui_cherche_ds_le_dico_l_nb_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(facteur1_principale,facteur2_secondaire_qd_deux_variables)
+        if facteur3_pr_precision == "nombre":
+            fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_generale_comprise_entre_n1_n2(facteur1_principale,facteur2_secondaire_qd_deux_variables)
 
     if cas == 4:
-        if moyenne_ou_note == "moyenne":
+        if facteur3_pr_precision == "moyenne":
             fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve(facteur1_principale)
-        if moyenne_ou_note == "note":
+        if facteur3_pr_precision == "note":
             fct_qui_cherche_ds_le_dico_les_notes_d_un_eleve_par_matière(facteur1_principale)
 
 def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemment(reponse):
     global question_plus_precise1
     global facteur1_principale
-    global facteur2_pr_precision
-    global facteur_3_secondaire_qd_deux_variables
+    global facteur3_pr_precision
+    global facteur2_secondaire_qd_deux_variables
+    global nom_eleve
 
     if reponse == mot_clee_correpondant_au_texte1:
         question_plus_precise1 = texte_pour_demander_n_et_ainsi_avoir_le_nombre_ou_la_liste_eleve_ayant_une_moyenne_dans_une_matiere_supérieure_à_n_sur_20
@@ -97,8 +98,9 @@ def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemmen
 
         if reponse in liste_noms:
             reponse = str(reponse)
-            nom_eleve = dico_globale["dico_liste_nom_a_prenom"][reponse]
+            reponse = dico_globale["dico_liste_nom_a_prenom"][reponse]
 
+        nom_eleve = reponse
         facteur1_principale = nom_eleve
         reponse = input(texte_pr_demander_plus_precisement_moyenne_ou_note)
 
@@ -106,7 +108,7 @@ def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemmen
             reponse = input(texte_pr_redemander_plus_precisement_moyenne_ou_note)
 
         moyenne_ou_note = reponse
-        facteur2_pr_precision = moyenne_ou_note
+        facteur3_pr_precision = moyenne_ou_note
 
     else:
 
@@ -134,9 +136,9 @@ def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemmen
 
             while fct_qui_verifie_que_l_utilisateur_entre_une_moyenne_comprise_entre_0_et_20(reponse) == False:
                 reponse = input(text_pour_redemander_une_note)
-            facteur_3_secondaire_qd_deux_variables = reponse
+            facteur2_secondaire_qd_deux_variables = reponse
 
-    return (facteur1_principale,facteur2_pr_precision,facteur_3_secondaire_qd_deux_variables)
+    return (cas,facteur1_principale,facteur2_secondaire_qd_deux_variables,facteur3_pr_precision)
 
 def fct_qui_demande_a_l_utilisateur_ce_qu_il_veut():
     reponse = input(texte_qui_demande_a_l_utilisateur_ce_qu_il_veut)
@@ -147,14 +149,12 @@ def fct_qui_demande_a_l_utilisateur_ce_qu_il_veut():
         fct_qui_verifie_que_l_utilisateur_ne_rentre_pas_n_importe_quoi_au_premier_input(reponse)
 
 
-    reponse = input(fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemment(reponse))
-
-    return(reponse)
+    return(fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemment(reponse))
 
 def main():
 
-    fct_qui_demande_a_l_utilisateur_ce_qu_il_veut()
-    fct_qui_cherche_ds_le_dico_l_info()
+
+    print(fct_qui_cherche_ds_le_dico_l_info(fct_qui_demande_a_l_utilisateur_ce_qu_il_veut()))
     fct_qui_traite_l_info()
     fct_qui_donne_ce_que_l_utilisateur_a_demander()
 

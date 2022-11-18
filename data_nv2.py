@@ -45,8 +45,7 @@ ensemble_de_note_de_tout_les_matieres = []
 list_eleve = []
 
 
-facteur1_principale = 1
-facteur_3_secondaire_qd_deux_variables = 0
+facteur2_secondaire_qd_deux_variables = 0
 
 note_entre_0_et_20 = []
 eleves_notes_gen = []
