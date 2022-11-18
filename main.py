@@ -206,7 +206,10 @@ def fct_qui_demande_a_l_utilisateur_ce_qu_il_veut():
 
 
 def fct_qui_donne_ce_que_l_utilisateur_a_demander(resultat):
+    print("Voici ce que vous avez demander : \n")
     print(resultat)
+
+
 
 
 def main():
