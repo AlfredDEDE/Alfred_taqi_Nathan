@@ -154,7 +154,8 @@ def fct_qui_demande_a_l_utilisateur_ce_qu_il_veut():
 def main():
 
 
-    print(fct_qui_cherche_ds_le_dico_l_info(fct_qui_demande_a_l_utilisateur_ce_qu_il_veut()))
+    print(fct_qui_cherche_ds_le_dico_l_info(fct_qui_demande_a_l_utilisateur_ce_qu_il_veut()[0][1][2][3] ))
+
     fct_qui_traite_l_info()
     fct_qui_donne_ce_que_l_utilisateur_a_demander()
 
