@@ -88,6 +88,8 @@ def fct_qui_cherche_ds_le_dico_l_nb_eleve_ayant_moyenne_matiere_sup_a_n(n1, mati
 
 def fct_qui_cherche_ds_le_dico_l_info(cas,facteur1_principale,facteur2_secondaire_qd_deux_variables,facteur3_pr_precision):
 
+    global resulat
+
     if cas == 1 :
         if facteur3_pr_precision == "liste" :
             resulat = fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_matiere_sup_a_n(facteur1_principale,facteur2_secondaire_qd_deux_variables)
@@ -112,7 +114,7 @@ def fct_qui_cherche_ds_le_dico_l_info(cas,facteur1_principale,facteur2_secondair
             resulat = fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve(facteur1_principale)
         if facteur3_pr_precision == "note":
             resulat = fct_qui_cherche_ds_le_dico_les_notes_d_un_eleve_par_matiere(facteur1_principale)
-    return resultat
+    return resulat
 
 def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemment(reponse):
     global question_plus_precise1
