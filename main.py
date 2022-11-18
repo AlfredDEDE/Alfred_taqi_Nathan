@@ -72,7 +72,7 @@ def fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_matiere_sup_a_n(n1, 
 
     for i in range(nombre_eleves):
         eleve = liste_prenoms[i]
-        
+
 
         if n1 < fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve_dans_une_matière(eleve,matiere):
             list_eleve_cree.append(eleve)
@@ -112,7 +112,7 @@ def fct_qui_cherche_ds_le_dico_l_info(cas,facteur1_principale,facteur2_secondair
             resulat = fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve(facteur1_principale)
         if facteur3_pr_precision == "note":
             resulat = fct_qui_cherche_ds_le_dico_les_notes_d_un_eleve_par_matiere(facteur1_principale)
-    return resulat
+    return resultat
 
 def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemment(reponse):
     global question_plus_precise1
@@ -196,12 +196,12 @@ def fct_qui_demande_a_l_utilisateur_ce_qu_il_veut():
     while fct_qui_verifie_que_l_utilisateur_ne_rentre_pas_n_importe_quoi_au_premier_input(reponse) == False:
 
         reponse = input(texte_qui_re_demande_a_l_utilisateur_ce_qu_il_veut)
-        
+
         if reponse == "q":
             exit()
-        
+
         fct_qui_verifie_que_l_utilisateur_ne_rentre_pas_n_importe_quoi_au_premier_input(reponse)
-        
+
         reponse = fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemment(reponse)
 
         if reponse == "q":
