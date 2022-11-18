@@ -6,16 +6,13 @@ from data_nv2 import *
 
 #////////////////////////////////////////////////////////////////////////////
 
-#fonction qui interagissent avec le dico
-# ds le main
-#fonction qui font ce que l'énoncé demande
-
-
 
 
 def fct_qui_cherche_ds_le_dico_les_notes_d_un_eleve_par_matiere(eleve):
     eleve = str(eleve)
     return dico_globale["dico_eleve_a_matiere_a_note"][eleve]
+
+
 
 def fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve(eleve):
 
@@ -28,7 +25,6 @@ def fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve(eleve):
         ensemble_de_note_de_tout_les_matieres += ensemble_de_note_d_une_matiere
 
     return moyenne(ensemble_de_note_de_tout_les_matieres)
-
 
 
 
@@ -64,7 +60,6 @@ def fct_qui_cherche_ds_le_dico_le_nombre_eleve_ayant_moyenne_generale_comprise_e
 
 
 def fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve_dans_une_matière(eleve, matiere):
-    print(matiere)
 
     moyenne_a_calculer = dico_globale["dico_eleve_a_matiere_a_note"][eleve][matiere]
     moyenne_calculer_pr_une_matiere = moyenne(moyenne_a_calculer)
@@ -77,7 +72,7 @@ def fct_qui_cherche_ds_le_dico_la_liste_eleve_ayant_moyenne_matiere_sup_a_n(n1, 
 
     for i in range(nombre_eleves):
         eleve = liste_prenoms[i]
-        print(eleve)
+        
 
         if n1 < fct_qui_cherche_ds_le_dico_la_moyenne_d_un_eleve_dans_une_matière(eleve,matiere):
             list_eleve_cree.append(eleve)
@@ -196,6 +191,9 @@ def fct_qui_traite_la_reponse_pour_savoir_ce_l_utilisateur_veut_plus_precisemmen
 def fct_qui_demande_a_l_utilisateur_ce_qu_il_veut():
     reponse = input(texte_qui_demande_a_l_utilisateur_ce_qu_il_veut)
 
+    if reponse == "q":
+        exit()
+
     while fct_qui_verifie_que_l_utilisateur_ne_rentre_pas_n_importe_quoi_au_premier_input(reponse) == False:
 
         reponse = input(texte_qui_re_demande_a_l_utilisateur_ce_qu_il_veut)
@@ -214,13 +212,10 @@ def fct_qui_donne_ce_que_l_utilisateur_a_demander(resultat):
 
 def main():
 
-    while reponse not in commande_pour_quitter:
-
         reponse_sous_forme_de_4_critere = fct_qui_demande_a_l_utilisateur_ce_qu_il_veut()
         resultat = fct_qui_cherche_ds_le_dico_l_info(reponse_sous_forme_de_4_critere[0],reponse_sous_forme_de_4_critere[1],reponse_sous_forme_de_4_critere[2], \
                                             reponse_sous_forme_de_4_critere[3])
         fct_qui_donne_ce_que_l_utilisateur_a_demander(resultat)
-    exit()
 
 #////////////////////////////////////////////////////////////////////////////
 
