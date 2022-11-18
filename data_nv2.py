@@ -186,3 +186,22 @@ text_pour_redemander_une_note = \
  + " \n Vous avez entré des notes qui ne sont pas entre 0 et 20" + \
  "\n Vous n'avez pas entre de notes" + \
   "\n Vous n'avez pas entre de matière")
+
+
+
+
+#phrase de conclusion
+
+phrase_conclu_pr_liste = \
+                       "Voici la liste demander"
+
+phrase_conclu_pr_nombre = \
+                        "Le nombre d'eleve est "
+
+phrase_conclu_pr_moyenne = \
+                         "La moyenne de l'eleve est "
+
+phrase_conclu_pr_notes = \
+                       "Les notes de l'eleve sont par matière"
+
+
